@@ -19,7 +19,7 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>SnowyWorks - Publisher of Comic Books/Graphic Novels - Science Fiction and more!</title>
 	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/snowtemplate.css?v=7" rel="stylesheet" type="text/css" />
+	<link href="css/snowtemplate.css?v=13" rel="stylesheet" type="text/css" />
 	<link type="text/css" rel="stylesheet" href="fontawesome/css/all.min.css" />
 </head>
 
@@ -57,7 +57,8 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://www.instagram.com/snowyworks/" class="icons" target="_blank"><i class="fab fa-instagram faz"></i> INSTAGRAM</a></li>
+						<li><a href="https://www.instagram.com/snowyworks/" class="icons" target="_blank"><i class="fab fa-instagram faz"></i></a></li>
+						<li><a href="https://twitter.com/LenhartDrew" class="icons" target="_blank"><i class="fab fa-twitter faz"></i></a></li>
 						<li><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> CONTACT</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -68,7 +69,6 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 			<div class="row">
 				<div class="col-md-4 text-white">
 					<center>
-
 						<img src="images/snowyLogoCircleB.png" alt="SnowyWorks" class="compImg centerMe" /><br /><br />
 
 						<a href="https://www.comixology.com/SnowyWorks/comics-publisher/15624-0?ref=c2VhcmNoL2luZGV4L2Rlc2t0b3Avc2xpZGVyTGlzdC90b3BSZXN1bHRzU2xpZGVy" target="_blank">
@@ -102,16 +102,13 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 			</div><!-- end row -->
 		</div>
 		<!-- end jumbotron -->
-		<div id="comics" class="jumbotron bg-img">
+		<div id="news" class="jumbotron bg-img">
 			<div class="container">
 				<div class="row">
 					<!--stones-->
 					<div class="panel panel-primary">
 						<div class="panel-body">
 							<div style="margin: 0 auto !important">
-								<center>
-
-								</center>
 								<div class="panel-body">
 									<div class="row">
 										<div class="col-md-2" style="">
@@ -139,389 +136,30 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 							</div>
 						</div>
 					</div>
-					<!--end stones-->
-					<!--Horror-->
-					<div class="panel panel-primary">
+					<!--end news-->
+
+					<!--Comics Section-->
+					<div id="comics" class="panel panel-primary">
 						<div class="panel-body">
 							<div style="margin: 0 auto !important">
-								<center>
-									<img src="images/horrorLogo.png" width="485" height="173" class="compImg" />
-								</center>
-								<br /><br />
 								<div class="panel-body">
 									<div class="row">
-										<div class="col-md-6" style="padding-bottom: 15px">
-											<p class="justify" style="font-size: 18px !important;">
-												<strong><em>Oh My, the Horror! #1 Anthology</em></strong><br /><br />
-
-												Oh My, the Horror! The first issue in a new horror anthology series. Collects six spooky and thrilling short stories
-												all in their black and white glory.<br /><br />
-
-												Get lost in tales of adolescent revenge, a serial murderer on the loose, a superheroes expired success,
-												a man’s demonized devotion, and more!<br /><br />
-
-												Features:<br />
-												<strong>The Librarian, Pumpkinman, Toadstools, Reckoning, The Covenant, and Noodles</strong><br />
-
-												<br /><br /><strong>Released - July 8, 2020</strong>
-											</p>
-
-
-											<strong><em>Support us by purchasing a digital copy from one of these platforms:</em></strong><br /><br />
-											<a href="https://www.comixology.com/Oh-My-the-Horror-1/digital-comic/872419" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-											<a href="https://www.drivethrucomics.com/product/319883/Oh-My-the-Horror-1" target="_blank" class="btn btn-primary btn-sm">DriveThruComics</a>
-											<a href="https://play.google.com/store/books/details?id=HOPvDwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-											<a href="https://www.amazon.com/dp/B08CKTRGKW" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-											<a href="https://www.spinwhizcomics.com/site/comics/snowyworks/oh-my-the-horror" target="_blank" class="btn btn-primary btn-sm">Spinwhiz Comics</a>
-											<br /><br />
-										</div>
-										<div class="col-md-6">
-											<center>
-												<a href="images/horrorMagLarge.png"><img src="images/horrorMagSmall.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-											</center>
+										<div class="col-md-12" style="">
+											<h2><span class="label label-default snowLabel">COMICS CATALOG</span></h2><br />
 										</div>
 									</div>
-									<!--end row-->
+									<div class="row" id="comic-results">
+										<center>
+											<div id="loader" class="loader"></div>
+										</center>
+									</div>
 								</div>
+								<!--end panel body-->
 							</div>
 						</div>
 					</div>
-					<!--deaged-->
-					<!--deaged-->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<center>
-									<img src="images/deaged_logo.png" width="485" height="173" class="compImg" />
-								</center>
-								<br /><br />
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-6" style="padding-bottom: 15px">
-											<p class="justify" style="font-size: 18px !important;">
-												<strong><em>Issue #01 - One Shot</em></strong><br /><br />
-												Jerry lives in a assisted living facility with death quickly approaching when a mysterious doctor visits
-												promising a cure.
-												<br /><br />
-												Story & Letters: <b>Drew D. Lenhart</b><br />
-												Pencils & Inks: <b>Louie Escauriaga</b><br />
-												Colors: <b>Jerry Lucas</b><br />
-												<br /><strong>Released - June 3, 2020</strong>
-											</p>
-											<strong><em>Support us by purchasing a digital copy from one of these platforms:</em></strong><br /><br />
-											<a href="https://www.comixology.com/De-Aged-1/digital-comic/864003" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-											<a href="https://www.drivethrucomics.com/product/316344/DeAged-1" target="_blank" class="btn btn-primary btn-sm">DriveThruComics</a>
-											<a href="https://play.google.com/store/books/details?id=smbpDwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-											<a href="https://www.amazon.com/dp/B089RMQ4PB" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-											<a href="https://www.spinwhizcomics.com/site/comics/snowyworks/de-aged-1" target="_blank" class="btn btn-primary btn-sm">Spinwhiz Comics</a>
-											<br /><br />
-										</div>
-										<div class="col-md-6">
-											<center>
-												<a href="images/de_aged_cover.png"><img src="images/deaged_logo_sm.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-											</center>
-										</div>
-									</div>
-									<!--end row-->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--deaged-->
+					<!--end comics section-->
 
-					<!--stones-->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<center>
-									<img src="images/stones-logo.jpg" width="420" height="133" class="compImg" />
-								</center>
-								<br /><br />
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-6" style="padding-bottom: 15px">
-											<p class="justify" style="font-size: 18px !important;">
-												<strong><em>Issue #1 of 2</em></strong><br /><br />
-												When mysterious objects from space change the course of history, how will the human race cope with such a force?
-												Acceptance or destruction? Stones collects the first two stories in a four-story collection.<br /><br />
-
-												"Stones" a short story showing through time, how humanity deals with the objects.
-												Are these objects a gift, or a curse?<br /><br />
-
-												"Under" follows the story of a farmer as he discovers something mysterious under the fallen object on
-												his farm. Will he discover what he's looking for, or lose himself in the process?<br /><br />
-
-												Beautiful artwork by Alberto Pessoa and written by Drew D. Lenhart<br /><br />
-												Reviews:<br />
-												<a href="http://majorspoilers.com/2020/05/01/stones-1-review/" target="_blank">Major Spoilers</a>
-												<br /><br /><strong>Released April 29, 2020</strong>
-											</p>
-											<strong><em>Support us by purchasing a digital copy from one of these platforms:</em></strong><br /><br />
-											<a href="https://www.comixology.com/Stones-01/digital-comic/856666" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-											<a href="https://www.drivethrucomics.com/product/314738/Stones-1" target="_blank" class="btn btn-primary btn-sm">DriveThruComics</a>
-											<a href="https://www.spinwhizcomics.com/site/comics/snowyworks/stones-1" target="_blank" class="btn btn-primary btn-sm">Spinwhiz Comics</a>
-											<br /><br />
-										</div>
-										<div class="col-md-6">
-											<center>
-												<a href="images/stones-cover-large.jpg"><img src="images/stones-cover-sm.jpg" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-											</center>
-										</div>
-									</div>
-									<!--end row-->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--end stones-->
-
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<center>
-									<img src="images/fscifilogo.png" class="compImg" />
-								</center>
-								<br /><br />
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-6" style="padding-bottom: 15px">
-											<p class="justify" style="font-size: 18px !important;">
-												<strong><em>Issue #04</em></strong><br /><br />
-												Tales from the future! Future Sci-Fi Tales anthology series issue #4 features five exciting tales of
-												science fiction. Features bullies in space, trouble with police issued applications, a martian hypochondriac
-												and an apocalyptic tale of Big Pharma!
-												<br /><br />
-												Stories are written by Drew D. Lenhart, Julio Paz and Matt Kund. Fantastic and astounding illustrations
-												by Scott Braren, Cristian Iglesias, LJ Phillips, Noah Ray and Greg Floch.
-												<br /><br />
-												Stories: In Chet We Trust, Apps War, Dust, RX-tinction and We Travel.<br /><br />
-												Cover by Juan Fleites.
-												<br /><br />
-											</p>
-											<strong><em>Support us by purchasing a digital copy from one of these platforms:</em></strong><br /><br />
-											<a href="https://www.comixology.com/Future-Sci-Fi-Tales-Vol-04/digital-comic/854944" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-											<a href="https://play.google.com/store/books/details?id=ninYDwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-											<a href="https://www.drivethrucomics.com/product/307234/Future-SciFi-Tales-04" target="_blank" class="btn btn-primary btn-sm">DriveThruComics</a>
-											<a href="https://www.amazon.com/dp/B0867KGGQG" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-											<a href="http://books.apple.com/us/book/id1505074847" target="_blank" class="btn btn-primary btn-sm">Apple Books</a>
-										</div>
-										<div class="col-md-6">
-											<center>
-
-												<a href="images/fscifi_04_cover.png"><img src="images/fscifi_04_cover_sm.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-
-											</center>
-										</div>
-									</div>
-									<!--end row-->
-								</div>
-							</div>
-						</div>
-					</div><br />
-
-					<h2><img src="images/comics.png" class="compImg" /></h2>
-					<!-- comics row -->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<center>
-								<img src="images/exp_zombie_logo.png" width="350" height="123" class="compImg" />
-							</center>
-							<hr />
-							<div class="row">
-								<div class="col-md-6" style="padding-bottom: 15px">
-									<p class="justify" style="font-size: 18px !important;">
-										<strong><em>Issue #01</em></strong><br /><br />
-
-										Zombies are used as challenges on an island survival reality show. The participants will
-										have to survive on their own and there can be only one winner who must reach a boat and win the prize.
-										Will the contestants survive?<br /><br />
-										Story: <strong>Julio Paz</strong>
-										<br />Art/Colors: <strong>Pietro Vaughan</strong><br />
-										Letters: <strong>Drew D. Lenhart</strong>
-										<br /><br />
-
-										Released: Feb 19, 2020
-									</p>
-
-									<br /><br />
-									<a href="https://www.comixology.com/Expedition-Zombie-1/digital-comic/842866" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-									<a href="https://www.drivethrucomics.com/product/314614/Expedition-Zombie" target="_blank" class="btn btn-primary btn-sm">DriveThruComics</a>
-									<a href="https://play.google.com/store/books/details?id=zabpDwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-									<a href="https://www.spinwhizcomics.com/site/comics/snowyworks/expedition-zombie" target="_blank" class="btn btn-primary btn-sm">Spinwhiz Comics</a>
-									<br />
-									<a href="preview/exp_zombie_preview.pdf" target="_blank" class="btn btn-primary btn-sm">Preview</a>
-								</div>
-								<div class="col-md-6">
-									<center>
-										<a href="images/expZombie.png"><img src="images/expZombieSM.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-									</center>
-								</div>
-							</div>
-							<!--end row-->
-						</div>
-					</div><!-- End row -->
-					<!-- comics row -->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<h2><span class="label label-primary snowLabel">Crizens</span></h2>
-							<hr />
-							<div class="row">
-								<div class="col-md-6" style="padding-bottom: 15px">
-									<p class="justify" style="font-size: 18px !important;">
-										<strong><em>Issue #01</em></strong><br /><br />
-
-										Tales from the future! Read three exciting short science fiction stories featuring pesky rodents
-										from another planet. Features Crizens, Tenny’s Revenge and Crizen’s Journey.
-										<br /><br />Stories originally
-										published in Future Sci-Fi Tales anthology! Stories by Drew D. Lenhart, with art by Louie Escauriaga
-										and Mike Cody.
-										<br /><br />
-										Released: January 29, 2020.
-									</p>
-
-									<br /><br />
-									<a href="https://www.amazon.com/dp/B083D6VF2Z" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-									<a href="https://play.google.com/store/books/details?id=NZfHDwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-									<a href="https://www.comixology.com/Crizens-01/digital-comic/836109" target="_blank" class="btn btn-primary btn-sm">Comixology</a><br />
-									<a href="preview/crizens_preview.pdf" target="_blank" class="btn btn-primary btn-sm">Preview</a>
-								</div>
-								<div class="col-md-6">
-									<center>
-										<a href="images/CrizensCover.png"><img src="images/CrizensCoverSM.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-									</center>
-								</div>
-							</div>
-							<!--end row-->
-						</div>
-					</div><!-- End row -->
-					<!-- comics row -->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<h2><span class="label label-primary snowLabel">Bitter Awakening</span></h2>
-							<hr />
-							<div class="row">
-								<div class="col-md-6" style="padding-bottom: 15px">
-									<p class="justify" style="font-size: 18px !important;">
-										This is a horror and mystery story with an expressionist influence. Lucas Freitas and Alberto Pessoa (Primas)
-										presents a gothic comic tale that brings together dream and reality, with an emphasis on a memoryless man in
-										a city who condemned him for crimes he did not commit ... crimes for which he thinks he did not commit!
-										<br /><br />
-										ComixCentral Comic Book of the week!<br /><br />
-										<a href="https://www.comixcentral.com/products/bitter-awakening/" target="_blank">
-											<img src="images/comic-of-the-week_bitter-awakening.png" width="245" height="278" class="compImg" />
-										</a><br />
-										ComixCentral Release: October 07, 2019.
-										<br />PRINT coming soon!
-									</p>
-
-									<br /><br />
-
-
-									<a href="https://www.comixology.com/Bitter-Awakening-01/digital-comic/821209?ref=c2VyaWVzL3ZpZXcvZGVza3RvcC9ncmlkTGlzdC9SZWNlbnRBZGRpdGlvbnM" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-									<a href="https://www.amazon.com/dp/B07YRR6D9X" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-									<a href="https://play.google.com/store/books/details/Lucas_Freitas_Bitter_Awakening?id=sdO1DwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-									<!--<a href="preview/futurescifiprewview.pdf" target="_blank" class="btn btn-primary btn-sm">Preview</a>-->
-								</div>
-								<div class="col-md-6">
-									<center>
-										<a href="images/baCover.png"><img src="images/baCoverSM.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-									</center>
-								</div>
-							</div>
-							<!--end row-->
-						</div>
-					</div><!-- End row -->
-					<!-- comics row -->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<h2><span class="label label-primary snowLabel">Future Sci-Fi Tales #03</span></h2>
-							<hr />
-							<div class="row">
-								<div class="col-md-6" style="padding-bottom: 15px">
-									<p class="justify" style="font-size: 18px !important;">
-										Tales from the future! Read three exciting short science fiction stories featuring surgeons miniaturized to combat a new strain of bacteria,
-										a scientist who performed the impossible to save the love of his life, and a stranded man unexpectedly abducted by aliens.<br /><br />
-										Stories are written by Julio Paz and Felipi De Souza. Fantastic and astounding illustrations
-										by Alberto Pessoa, Edu Pelayo & Cristian Navarro.
-										<br /><br />
-										Features: Micromythos, Artificaos Intelligence & The Lovers.<br /><br />
-										ComixCentral Release: August 12, 2019.
-										<br />
-									</p>
-									<br /><br />
-									<a href="https://indyplanet.com/future-sci-fi-tales-3" target="_blank" class="btn btn-primary btn-sm">PRINT</a>
-									<a href="https://www.comixology.com/Future-Sci-Fi-Tales-Vol-03/digital-comic/807223?ref=Y29taWMvdmlldy9kZXNrdG9wL3NsaWRlckxpc3Qvc2VyaWVz" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-									<a href="https://www.amazon.com/dp/B07Z237TWR" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-									<a href="https://play.google.com/store/books/details/Julio_Paz_Future_Sci_Fi_Tales_03?id=R9G1DwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-								</div>
-								<div class="col-md-6">
-									<center>
-										<a href="images/fscifi-cover1.png"><img src="images/fscifi-cover1sm.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-									</center>
-								</div>
-							</div>
-							<!--end row-->
-						</div>
-					</div><!-- End row -->
-					<!-- comics row -->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<h2><span class="label label-primary snowLabel">Future Sci-Fi Tales #02</span></h2>
-							<hr />
-							<div class="row">
-								<div class="col-md-6" style="padding-bottom: 15px">
-									<p class="justify" style="font-size: 18px !important;">
-										Tales from the future! Read four exciting short science fiction stories featuring a Clint Darius adventure,
-										alien insects, pesky rodents from Trappist 4, Dhampires and Automations!<br /><br />
-										Stories written by Jason Aaron Wong, Petri Hännien, Drew D. Lenhart & LJ Phillips.
-										Fantastic and astounding illustrations by Francisco Paronzini, Andrea Meneghin & LJ Phillips.
-										<br /><br />
-										Features: Clint Darius: Homecoming, The Death of a Family, Crizen’s Journey, Clockwork Blues.<br /><br />
-										Released: April 4, 2019.
-									</p>
-									<br /><br />
-									<a href="http://www.indyplanet.us/future-sci-fi-tales-02/" target="_blank" class="btn btn-primary btn-sm">PRINT</a>
-									<a href="https://www.comixology.com/Future-Sci-Fi-Tales-Vol-02/digital-comic/770873?ref=c2VhcmNoL2luZGV4L2Rlc2t0b3Avc2xpZGVyTGlzdC90b3BSZXN1bHRzU2xpZGVy" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-									<a href="https://www.amazon.com/dp/B07Z249S29" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-									<a href="https://play.google.com/store/books/details/Jason_Aaron_Wong_Future_Sci_Fi_Tales_02?id=J9G1DwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-									<br /><a href="preview/futurescifiprewview.pdf" target="_blank" class="btn btn-primary btn-sm">Preview</a>
-								</div>
-								<div class="col-md-6">
-									<center>
-										<a href="images/fscifi02-large.png"><img src="images/fscifi02-mini.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-									</center>
-								</div>
-							</div>
-							<!--end row-->
-						</div>
-					</div><!-- End row -->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<h2><span class="label label-primary snowLabel">Future Sci-Fi Tales #01</span></h2>
-							<hr />
-							<div class="row">
-								<div class="col-md-6" style="padding-bottom: 15px">
-									<p class="justify" style="font-size: 18px !important;">
-										Tales from the future! Read six exciting short science fiction stories featuring pesky rodents from another planet, robots,
-										slow droids, a tale of revenge and more. Features four short stories in black and white drawn comic format, illustrated by
-										Louie Escauriaga and Lee Milewski as well as two short stories written by Drew D. Lenhart.<br /><br />
-										<em>Written By: Drew D. Lenhart
-											<br />Illustrations by: Louie Escauriaga and Lee Milewski</em>
-									</p><br /><br />
-									<a href="http://www.indyplanet.us/future-sci-fi-tales-1/" target="_blank" class="btn btn-primary btn-sm">PRINT</a>
-									<a href="https://www.comixology.com/Future-Sci-Fi-Tales-1/digital-comic/731354?ref=c2VhcmNoL2luZGV4L2Rlc2t0b3Avc2xpZGVyTGlzdC90b3BSZXN1bHRzU2xpZGVy" target="_blank" class="btn btn-primary btn-sm">Comixology</a>
-									<a href="https://www.amazon.com/dp/B07JVW71L3" target="_blank" class="btn btn-primary btn-sm">Kindle</a>
-									<a href="https://play.google.com/store/books/details?id=gCjPDwAAQBAJ" target="_blank" class="btn btn-primary btn-sm">Google Play</a>
-								</div>
-								<div class="col-md-6">
-									<center>
-										<a href="images/fscifi-xlarge.png"><img src="images/fscifi-post.png" alt="" class="compImg" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-									</center>
-								</div>
-							</div>
-							<!--end row-->
-						</div>
-					</div><!-- End row -->
 				</div>
 			</div>
 		</div>
@@ -532,71 +170,11 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 
 			<div class="panel panel-primary">
 				<div class="panel-body">
-					<h2><img src="images/submit.png" class="compImg" /></h2>
-					<!--<div class="alert alert-info" role="alert">
-										Submissions are currently closed for <em>Future Sci-Fi Tales #2</em>. Submissions will open in the coming months for the next issue! --<em>Drew</em>
-									</div>-->
+					<h2><span class="label label-default snowLabel">SUBMISSIONS</span></h2>
 					<span style="font-size: 16px !important">
-						<br />We are not accepting submissions at this time. <br /><br />
-						Please check back at another time.<br /><br />
+						<br />Thank you for your interest in submitting your hard work to SnowyWorks for consideration, however we are currently not accepting any submissions at this time. <br /><br />
+						Please check back soon as Future Sci-Fi Tales 2021 will be accepting submissions in early 2021!<br /><br />
 						Thank you!
-						<!--Accepting Submissions for Future Sci-Fi Tales - as of Feb 15, 2020<br /><br />
-						Hey! I am seeking submissions for the fifth and sixth issue of Future Sci-Fi Tales! I am looking for short sci-fi comic stories. If you haven't picked up the other issues, please take a look at the links below for reference.
-						<br /><br />
-						<b>Take a look:<br />
-						Future Sci-Fi Tales #1</b><br />
-						Print: <a href="http://www.indyplanet.us/future-sci-fi-tales-1/">http://www.indyplanet.us/future-sci-fi-tales-1/</a><br />
-						Comixology: http://bit.ly/2BHnELM<br />
-
-						<b>Future Sci-Fi Tales #2</b><br />
-						Print: <a href="http://www.indyplanet.us/future-sci-fi-tales-02/">http://www.indyplanet.us/future-sci-fi-tales-02/</a><br />
-
-						<b>Future Sci-Fi Tales #3</b><br />
-						Print: <a href="https://www.comixology.com/Future-Sci-Fi-Tales-Vol-03/digital-comic/807223">https://www.comixology.com/Future-Sci-Fi-Tales-Vol-03/digital-comic/807223</a><br />
-						<br />
-						This is a <b>NON-paying</b> gig. Sorry!! If you are an artist or writer trying to make a break, this will be a great book to get your work published! The little funding I do have allocated for this project will go into commissioning an artist
-						for
-						the cover artwork.
-						<br /><br />
-						I am looking to fill 3 - 4 short stories per issue.
-						<br /><br />
-						<b>Requirements:</b><br />
-						1. 4 - 10 pages of completed art - inked/lettered.<br />
-						2. Pages must be black and white or colored.<br />
-						3. Pages must be submitted 300 dpi & formatted to Ka-Blam’s template: <a href="http://ka-blam.com/main/standard-sized-page-template/">Ka-Blam Template</a>.<br />
-						4. Stories must be Science Fiction & set in the future ( like the title says ).<br />
-						5. I will accept sci-fi horror as long as it’s set in the future.<br />
-						<br />
-
-						This book will be listed in comiXology, IndyPlanet, Amazon Kindle, Drivethru Comics and Google Play. Any profit made from the book will be rolled into the development of the next issue.
-						<br /><br />
-						In order to be fair to all creators, the print edition of the book will be listed on IndyPlanet $1.00 less that the cover listing ( e.g. for issue #1, the cover price is $5.99, but listed at $4.99 ). This is the best way I can think of to
-						be fair to all submitters and also gives an option to purchase copies at a discount from IndyPlanet ( 25% discount if you order 5 or more ). This way it gives you a way to purchase copies cheaper for your comic shows, online store, or
-						whatever reason.
-						<br /><br />
-						<b>Optional:</b><br />
-						This next section is entirely optional to all creative teams! I would also like to open the option for each submitting creative team to create their own variant cover. Take a look at the link above to Issue #1 and see the lower half page
-						artwork. It will be about that size & I will give out cover size requirements later on.
-						<br /><br />
-						I will list the variant cover editions on IndyPlanet.<br /><br />
-
-						<b>Lastly:</b><br />
-						I reserve the right to deny any submissions. If I receive more submissions than I need, I will roll into the next issue. So please have your creative teams lined up for your submission if it is not already completed!! Also, each creator will be
-						expected to sign an agreement for this project and pretty much entails whats explained here.
-						<br /><br />
-						<b>Deadline:</b><br />
-						Proposal Deadline: Submissions accepted all year!<br /><br />
-
-						If your submission is an idea with a creative team ready to work, I would like to see sample art & a page of the script!
-						If you already have your artwork done, that is awesome, send me a page so I can judge it!
-						<br /><br />
-						Please send proposals/artwork/script sample to: <a href="mailto:snowyworks2018@gmail.com">snowyworks2018@gmail.com</a>
-						<br /><br /><br />
-
-						Thanks!<br /><br />
-
-						Drew D. Lenhart<br />
-						SnowyWorks-->
 					</span>
 				</div>
 			</div>
@@ -605,7 +183,7 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 		<div id="contact" class="jumbotron bg-img">
 			<div class="container">
 				<div class="row">
-					<h2><img src="images/contact.png" class="compImg" /></h2>
+					<h2><span class="label label-default snowLabel">CONTACT</span></h2><br />
 					<form method="POST" action="https://formspree.io/snowyworks2018@gmail.com">
 						<input type="hidden" name="_subject" value="Contact request from SNOWYWORKS" />
 
@@ -628,11 +206,57 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 				<br /><em>Website best viewed in a modern browser. You can view the source code at <a href="https://github.com/snowyworks/snowyworks.github.io" target="_blank">GitHub</a>.</em>
 			</div>
 		</div>
+	</div><!-- end container-->
+
+	<!-- modal -->
+	<div id="fsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 id="modal-title-bar" class="modal-title">
+						Loading....
+					</h1>
+				</div>
+				<div class="modal-body" id="modal-body-content">
+					<div id="modal-results"></div>
+				</div>
+				<div class="modal-footer">
+					<button data-dismiss="modal" class="btn btn-primary">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/st-spa.js"></script>
+	<script src="js/snowyworks-app.js?v=7"></script>
 	<script>
+		// Modal click & load comic dialog
+		$(document).on("click", ".open-comicDialog", function() {
+			let comicID = $(this).data('id');
+			let title = $(this).data('title');
+			let resultsDiv = $("#modal-results");
+
+			resultsDiv.html('');
+
+			$(".modal-header #modal-title-bar").html(title);
+
+			$.get("comics/" + comicID + "-comic.html", function(data) {
+					resultsDiv.html(data);
+				}).done(function() {
+					//send success
+				})
+				.fail(function() {
+					resultsDiv.html("<h2>Unable to find this issue!</h2>");
+				})
+				.always(function() {
+					//always perform for every request
+				});
+		});
+
+		$(document).ready(function() {
+			loadComicCatalog("comic-results", true, "loader");
+		});
 	</script>
 </body>
 
