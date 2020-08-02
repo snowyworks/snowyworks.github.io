@@ -9,7 +9,7 @@
 function loadComicCatalog(resultsDiv = "results", debug = false, loader){
   let stagingArea = $("#" + resultsDiv);
   let turnOffLoader = $("#" + loader);
-  console.log(turnOffLoader);
+
   var ts = new Date().getTime();
   var data = {_: ts};
 
