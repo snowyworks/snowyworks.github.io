@@ -111,7 +111,7 @@ a.link {
 
 /*COLUMN ADJUSTMENTS-----------*/
 .col-md-4 {
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
 }
 
 .col-xs-6 {
@@ -339,5 +339,11 @@ a.link {
 @media (min-width: 992px) {
   .modal-dialog {
     width: 970px;
+  }
+}
+
+@media (max-width: 768px) {
+  #digitalBox {
+    display: none;
   }
 }

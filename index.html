@@ -19,7 +19,7 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>SnowyWorks - Publisher of Comic Books/Graphic Novels - Science Fiction and more!</title>
 	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/snowtemplate.css?v=13" rel="stylesheet" type="text/css" />
+	<link href="css/snowtemplate.css?v=15" rel="stylesheet" type="text/css" />
 	<link type="text/css" rel="stylesheet" href="fontawesome/css/all.min.css" />
 </head>
 
@@ -67,26 +67,29 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 
 		<div class="jumbotron bg-color borderBottom" style="background-image:url(images/testback2.png)">
 			<div class="row">
-				<div class="col-md-4 text-white">
+				<div class="col-md-4 text-white" id="">
 					<center>
-						<img src="images/snowyLogoCircleB.png" alt="SnowyWorks" class="compImg centerMe" /><br /><br />
+						<img src="images/snowyLogoCircleB.png" alt="SnowyWorks" class="compImg centerMe" />
 
-						<a href="https://www.comixology.com/SnowyWorks/comics-publisher/15624-0?ref=c2VhcmNoL2luZGV4L2Rlc2t0b3Avc2xpZGVyTGlzdC90b3BSZXN1bHRzU2xpZGVy" target="_blank">
-							<img src="images/comixology.png" width="40" title="Comixology" height="40" class="compImg centerMe" />
-						</a>
-						<a href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss" target="_blank">
-							<img src="images/kindle.png" width="40" height="40" title="Amazon Kindle" class="compImg centerMe" />
-						</a>
-						<a href="https://play.google.com/store/books/series?id=eAYqGwAAABBTHM" target="_blank">
-							<img src="images/googleplay.jpeg" width="40" height="40" title="Google Play" class="compImg centerMe" />
-						</a>
-						<a href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks" target="_blank">
-							<img src="images/spin-logo.png" width="40" height="40" title="SpinWhiz Comics" class="compImg centerMe" />
-						</a>
-						<br />
-						<a href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks" target="_blank">
-							<img src="images/drivethru.gif" style="margin-top: 5px !important" class="compImg centerMe" />
-						</a>
+						<div id="digitalBox">
+							<br />
+							<a href="https://www.comixology.com/SnowyWorks/comics-publisher/15624-0?ref=c2VhcmNoL2luZGV4L2Rlc2t0b3Avc2xpZGVyTGlzdC90b3BSZXN1bHRzU2xpZGVy" target="_blank">
+								<img src="images/comixology.png" width="40" title="Comixology" height="40" class="compImg centerMe" />
+							</a>
+							<a href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss" target="_blank">
+								<img src="images/kindle.png" width="40" height="40" title="Amazon Kindle" class="compImg centerMe" />
+							</a>
+							<a href="https://play.google.com/store/books/series?id=eAYqGwAAABBTHM" target="_blank">
+								<img src="images/googleplay.jpeg" width="40" height="40" title="Google Play" class="compImg centerMe" />
+							</a>
+							<a href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks" target="_blank">
+								<img src="images/spin-logo.png" width="40" height="40" title="SpinWhiz Comics" class="compImg centerMe" />
+							</a>
+							<br />
+							<a href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks" target="_blank">
+								<img src="images/drivethru.gif" style="margin-top: 5px !important" class="compImg centerMe" />
+							</a>
+						</div>
 					</center>
 
 				</div><!-- end colmd6 -->
@@ -229,7 +232,7 @@ Links: https://codepen.io/nathancooper/pen/IwGfs
 
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/snowyworks-app.js?v=9"></script>
+	<script src="js/snowyworks-app.js?v=10"></script>
 	<script>
 		// Modal click & load comic dialog
 		$(document).on("click", ".open-comicDialog", function() {
