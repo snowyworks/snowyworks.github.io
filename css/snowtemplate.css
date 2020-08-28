@@ -378,7 +378,8 @@ text-align: center;
 /* CASPIAN PORTER --------------------------------*/
 
 .background_krackle {
-  background-image: url(../images/krackle_1.jpg);
+  /*background-image: url(../images/krackle_1.jpg);*/
+  background-image: url(../images/BG_Porter_2.jpg);
   background-repeat: no-repeat, repeat;
 }
 .top {
