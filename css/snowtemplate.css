@@ -377,21 +377,28 @@ text-align: center;
 
 /* CASPIAN PORTER --------------------------------*/
 
-.background_krackle {
-  /*background-image: url(../images/krackle_1.jpg);*/
-  background-image: url(../images/BG_Porter_3.png);
-  background-repeat: no-repeat, repeat;
+#background_krackle {
+  /*background-image: url(../images/krackle_1.jpg);
+  background-image: url(../images/BG_Porter_3.png);*/
+  /*background-repeat: no-repeat, repeat;*/
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
 }
+
 .top {
   margin-top: 150px !important;
 }
-
 
 .panel-green {
   background: rgba(6, 35, 12, 0.9);
   /*background-color: black !important;
   opacity:0.9 !important;*/
-
 }
 
 .blockico{
