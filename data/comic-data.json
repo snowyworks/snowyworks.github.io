@@ -1,4 +1,16 @@
 [{
+    "title": "Wall Breakers",
+    "id": "wallbreakers",
+    "label": "Wall Breakers #1",
+    "image": "wallbreakersSmall.png"
+  },
+  {
+    "title": "Future Sci-Fi Tales 2020",
+    "id": "fscifi2020",
+    "label": "Future Sci-Fi Tales 2020",
+    "image": "fscifi2020Small.png"
+  },
+  {
     "title": "Oh My, the Horror!",
     "id": "omth",
     "label": "Oh My, the Horror! #1",
