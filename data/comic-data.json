@@ -1,9 +1,11 @@
-[  {
-    "title": "Wall Breakers",
-    "id": "wallbreakers",
-    "label": "Wall Breakers #1",
-    "image": "wallbreakersSmall.png"
-  },{
+[
+  {
+    "title": "Calzer's Clock",
+    "id": "calzers",
+    "label": "Calzer's Clock #1",
+    "image": "calzersSmall.png"
+  },
+  {
     "title": "The Monster's Cleanup Guy",
     "id": "monsters",
     "label": "Monster's Cleanup Guy",
