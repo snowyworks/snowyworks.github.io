@@ -17,6 +17,16 @@ video {
 }
 
 /*CUSTOM STYLES-------------*/
+
+.padd-top {
+  padding-top: 30px !important;
+}
+
+.jumbotron-override {
+  padding-top: 15px !important;
+  padding-bottom: 10px !important;
+}
+
 a.link {
   color: #405171;
 }
