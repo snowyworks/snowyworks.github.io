@@ -452,4 +452,9 @@ text-align: center;
   #digitalBox {
     display: none;
   }
+
+  .bottom-footer {
+    margin-bottom: 2% !important;
+    text-align: center;
+  }
 }
