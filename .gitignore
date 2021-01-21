@@ -1,0 +1,6 @@
+# gitignore - ddl
+
+# Extra ignores
+.DS_Store
+images/*.psd
+Thumbs.db
