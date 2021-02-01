@@ -1,5 +1,11 @@
 [
   {
+    "title": "Caspian Porter",
+    "id": "caspian",
+    "label": "Caspian Porter #1",
+    "image": "caspian_small.jpg"
+  },
+  {
     "title": "Calzer's Clock",
     "id": "calzers",
     "label": "Calzer's Clock #1",
