@@ -1,5 +1,17 @@
 [
   {
+    "title": "Tales From the Dispatch",
+    "id": "tales1",
+    "label": "TFTD Vol #1",
+    "image": "vol1_cover_300.jpg"
+  },
+  {
+    "title": "Tales From the Dispatch",
+    "id": "tales2",
+    "label": "TFTD Vol #2",
+    "image": "vol2_cover_300.jpg"
+  },
+  {
     "title": "Caspian Porter",
     "id": "caspian",
     "label": "Caspian Porter #1",
