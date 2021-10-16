@@ -15,7 +15,7 @@ function loadComicCatalog(resultsDiv = "results", debug = false, loader){
 
   turnOffLoader.hide();
 
-  $.getJSON('data/comic-data.json?v=16', function(data) {
+  $.getJSON('data/comic-data.json?v=18', function(data) {
     if(debug) { console.log(Object.keys(data).length); }
     $.each(data, function(key, value) {
       let content = '';
