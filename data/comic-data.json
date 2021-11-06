@@ -1,5 +1,11 @@
 [
   {
+    "title": "Future Sci-Fi Tales: Spatial Void",
+    "id": "tales6",
+    "label": "FSCIFI Spatial Void",
+    "image": "fscifi_300.png"
+  },
+  {
     "title": "Tales From the Dispatch",
     "id": "tales1",
     "label": "TFTD Vol #1",
