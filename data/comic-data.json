@@ -1,5 +1,11 @@
 [
   {
+    "title": "The Monster's Cleanup Guy #1",
+    "id": "monsters1",
+    "label": "The Monster's Cleanup Guy #1",
+    "image": "tmcug-300.png"
+  },
+  {
     "title": "Future Sci-Fi Tales: Spatial Void",
     "id": "tales6",
     "label": "FSCIFI Spatial Void",
@@ -44,7 +50,7 @@
   {
     "title": "The Monster's Cleanup Guy",
     "id": "monsters",
-    "label": "Monster's Cleanup Guy",
+    "label": "Monster's Cleanup Guy (short)",
     "image": "mcug-digital-small.jpg"
   },
   {
