@@ -1,0 +1,75 @@
+/*
+FloaterBall - snowytech - Drew D. Lenhart
+*/
+body { 
+    margin: 0; 
+    padding: 0; 
+    background: #1F1F1F;
+    font-family: Courier, "Lucida Console", monospace;
+}
+canvas { 
+    display: block; 
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    background: #fff; 
+    border: 3px solid green;
+    border-radius: 3px;
+    background-image: url(../images/testback.png);
+
+}
+.instructionBox{ 
+    display: block; 
+    margin: 0 auto;
+    padding: 1%;
+    width: 20%; 
+    color: white;
+    text-align: center;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.titleBox{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+}
+.pause{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: green;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 20%; 
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+.footer{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    
+    
+}
+.pauseOverlay{
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 1001;
+}
