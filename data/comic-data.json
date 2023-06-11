@@ -1,5 +1,17 @@
 [
   {
+    "title": "Caspian Porter TPB",
+    "id": "caspiantpb",
+    "label": "Caspian Porter TPB",
+    "image": "caspian-tpb-300.png"
+  },
+  {
+    "title": "Tales From the Dispatch",
+    "id": "tales4",
+    "label": "TFTD Vol #4",
+    "image": "tftd-4-300.png"
+  },
+  {
     "title": "Caspian Porter #4",
     "id": "caspian4",
     "label": "Caspian Porter #4",
