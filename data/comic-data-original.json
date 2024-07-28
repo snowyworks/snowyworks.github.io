@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Future Sci-Fi Tales: Starfall",
+    "id": "fscifi7",
+    "label": "FSCIFI Spatial Void",
+    "image": "fscifi-7-300.jpg"
+  },
+  {
+    "title": "The Monster's Cleanup Guy Vol 1",
+    "id": "monstersv1",
+    "label": "The Monster's Cleanup Guy V1",
+    "image": "monsters-v1-300.png"
+  },
+  {
+    "title": "Caspian Porter TPB",
+    "id": "caspiantpb",
+    "label": "Caspian Porter TPB",
+    "image": "caspian-tpb-300.png"
+  },
+  {
+    "title": "Tales From the Dispatch",
+    "id": "tales4",
+    "label": "TFTD Vol #4",
+    "image": "tftd-4-300.png"
+  },
+  {
+    "title": "Caspian Porter #4",
+    "id": "caspian4",
+    "label": "Caspian Porter #4",
+    "image": "caspian-4-300.png"
+  },
+  {
+    "title": "Gritt Grimstone: Tales From A Far Out Future",
+    "id": "grimstone",
+    "label": "Gritt Grimstone",
+    "image": "grimstone-300.png"
+  },
+  {
+    "title": "Caspian Porter #3",
+    "id": "caspian3",
+    "label": "Caspian Porter #3",
+    "image": "caspian-3-300.png"
+  },
+  {
+    "title": "Caspian Porter #2",
+    "id": "caspian2",
+    "label": "Caspian Porter #2",
+    "image": "caspian-2-300.png"
+  },
+  {
+    "title": "Tales From the Dispatch",
+    "id": "tales3",
+    "label": "TFTD Vol #3",
+    "image": "tftd-3-300.png"
+  },
+  {
+    "title": "The Monster's Cleanup Guy #1",
+    "id": "monsters1",
+    "label": "The Monster's Cleanup Guy #1",
+    "image": "tmcug-300.png"
+  },
+  {
+    "title": "Future Sci-Fi Tales: Spatial Void",
+    "id": "tales6",
+    "label": "FSCIFI Spatial Void",
+    "image": "fscifi_300.png"
+  },
+  {
+    "title": "Tales From the Dispatch",
+    "id": "tales1",
+    "label": "TFTD Vol #1",
+    "image": "vol1_cover_300.jpg"
+  },
+  {
+    "title": "Tales From the Dispatch",
+    "id": "tales2",
+    "label": "TFTD Vol #2",
+    "image": "vol2_cover_300.jpg"
+  },
+  {
+    "title": "Caspian Porter",
+    "id": "caspian",
+    "label": "Caspian Porter #1",
+    "image": "caspian_small.jpg"
+  },
+  {
+    "title": "Caspian Porter",
+    "id": "caspian0",
+    "label": "Caspian Porter #0",
+    "image": "caspian_zero_small.jpg"
+  },
+  {
+    "title": "Calzer's Clock",
+    "id": "calzers",
+    "label": "Calzer's Clock #1",
+    "image": "calzersSmall.png"
+  },
+  {
+    "title": "The Monster's Cleanup Guy",
+    "id": "monsters",
+    "label": "Monster's Cleanup Guy (short)",
+    "image": "mcug-digital-small.jpg"
+  },
+  {
+    "title": "Future Sci-Fi Tales 2020",
+    "id": "fscifi2020",
+    "label": "Future Sci-Fi Tales 2020",
+    "image": "fscifi2020Small.png"
+  },
+  {
+    "title": "Oh My, the Horror!",
+    "id": "omth",
+    "label": "Oh My, the Horror! #1",
+    "image": "horrorMagSmall.png"
+  },
+  {
+    "title": "De-Aged",
+    "id": "deaged",
+    "label": "De-Aged #1",
+    "image": "deaged_logo_sm.png"
+  },
+  {
+    "title": "Stones",
+    "id": "stones",
+    "label": "Stones #1 of 2",
+    "image": "stones-cover-sm.jpg"
+  },
+  {
+    "title": "Expedition Zombie",
+    "id": "expedition",
+    "label": "Expedition Zombie #1",
+    "image": "expZombieSM.png"
+  },
+  {
+    "title": "Bitter Awakening",
+    "id": "bitter",
+    "label": "Bitter Awakening #1",
+    "image": "baCoverSM.png"
+  },
+  {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi4",
+    "label": "Future Sci-Fi Tales #4",
+    "image": "fscifi_04_cover_sm.png"
+  },
+  {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi3",
+    "label": "Future Sci-Fi Tales #3",
+    "image": "fscifi-cover1sm.png"
+  },
+  {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi2",
+    "label": "Future Sci-Fi Tales #2",
+    "image": "fscifi02-mini.png"
+  },
+  {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi1",
+    "label": "Future Sci-Fi Tales #1",
+    "image": "fscifi-post.png"
+  },
+  {
+    "title": "Crizens",
+    "id": "crizens",
+    "label": "Crizens #1",
+    "image": "CrizensCoverSM.png"
+  }
+]

@@ -1,0 +1,78 @@
+{
+    "count": 10,
+    "next": null,
+    "results": [
+{
+    "title": "The Monster's Cleanup Guy",
+    "id": "monsters",
+    "label": "Monster's Cleanup Guy (short)",
+    "image": "mcug-digital-small.jpg"
+},
+{
+    "title": "Future Sci-Fi Tales 2020",
+    "id": "fscifi2020",
+    "label": "Future Sci-Fi Tales 2020",
+    "image": "fscifi2020Small.png"
+},
+{
+    "title": "Oh My, the Horror!",
+    "id": "omth",
+    "label": "Oh My, the Horror! #1",
+    "image": "horrorMagSmall.png"
+    },
+    {
+    "title": "De-Aged",
+    "id": "deaged",
+    "label": "De-Aged #1",
+    "image": "deaged_logo_sm.png"
+    },
+    {
+    "title": "Stones",
+    "id": "stones",
+    "label": "Stones #1 of 2",
+    "image": "stones-cover-sm.jpg"
+    },
+    {
+    "title": "Expedition Zombie",
+    "id": "expedition",
+    "label": "Expedition Zombie #1",
+    "image": "expZombieSM.png"
+    },
+    {
+    "title": "Bitter Awakening",
+    "id": "bitter",
+    "label": "Bitter Awakening #1",
+    "image": "baCoverSM.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi4",
+    "label": "Future Sci-Fi Tales #4",
+    "image": "fscifi_04_cover_sm.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi3",
+    "label": "Future Sci-Fi Tales #3",
+    "image": "fscifi-cover1sm.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi2",
+    "label": "Future Sci-Fi Tales #2",
+    "image": "fscifi02-mini.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi1",
+    "label": "Future Sci-Fi Tales #1",
+    "image": "fscifi-post.png"
+    },
+    {
+    "title": "Crizens",
+    "id": "crizens",
+    "label": "Crizens #1",
+    "image": "CrizensCoverSM.png"
+    }
+]
+}

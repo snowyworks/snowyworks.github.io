@@ -3,121 +3,284 @@ Author: Drew D. Lenhart
 Author URI: https://snowyworks.com
 Project: snowyworks.github.io
 ProjectURL: https://github.com/snowyworks/snowyworks.github.io
-Date: June 2017 - updated 10-29-2023
+Date: June 2017 - updated 07-28-2023
 -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="SnowyWorks" />
+    <meta name="author" content="Drew D. Lenhart" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>
+      SnowyWorks - Publisher of Comic Books/Graphic Novels - Science Fiction and
+      more!
+    </title>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/htmx.org"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/client-side-templates.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nunjucks@3.2.4/browser/nunjucks.min.js"></script>
+    <link href="css/snowtemplate.css?v=21" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="fontawesome/css/all.min.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="SnowyWorks">
-	<meta name="author" content="Drew D. Lenhart">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<title>SnowyWorks - Publisher of Comic Books/Graphic Novels - Science Fiction and more!</title>
-	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/snowtemplate.css?v=21" rel="stylesheet" type="text/css" />
-	<link type="text/css" rel="stylesheet" href="fontawesome/css/all.min.css" />
-</head>
+  <body>
+    <div class="container">
+      <div id="navbar"></div>
+      <nav class="navbar navbar-default borderBottom">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+              <img src="images/swIcon3.png" alt="SnowyWorks" class="" />
+            </a>
+          </div>
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav">
+              <li class=""><a href="#comics">COMICS</a></li>
+              <li class=""><a href="#news">NEWS</a></li>
+              <li><a href="#submissions">SUBMISSIONS</a></li>
+              <li>
+                <a href="https://snowyworks.bigcartel.com" target="_blank"
+                  ><i class="fa fa-shopping-cart faz"></i> SHOP</a
+                >
+              </li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >BUY DIGITAL<span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss"
+                      >Amazon</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.comichaus.com/publishers/snowyworks/903.htm"
+                      >Comichaus</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks"
+                      >Drive Thru Comics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://play.google.com/store/books/author?id=Drew+D.+Lenhart"
+                      >Google Play</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.kobo.com/us/en/search?query=Drew+D.+Lenhart"
+                      >Kobo</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://globalcomix.com/a/snowyworks"
+                      >GlobalComix</a
+                    >
+                  </li>
+                  <li><a href="https://gumroad.com/snowyworks">Gumroad</a></li>
+                  <li>
+                    <a
+                      href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks"
+                      >Spinwhiz Comics</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a
+                  href="https://www.instagram.com/snowyworks/"
+                  class="icons"
+                  target="_blank"
+                  ><i class="fab fa-instagram faz"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/LenhartDrew"
+                  class="icons"
+                  target="_blank"
+                  ><i class="fab fa-twitter faz"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/drew.lenhart.35/"
+                  class="icons"
+                  target="_blank"
+                  ><i class="fab fa-facebook faz"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#contact"
+                  ><span
+                    class="glyphicon glyphicon-envelope"
+                    aria-hidden="true"
+                  ></span>
+                  CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
 
-<body>
-	<div class="container">
-		<div id="navbar"></div>
-		<nav class="navbar navbar-default borderBottom">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="/" class="navbar-brand">
-						<img src="images/swIcon3.png" alt="SnowyWorks" class="" />
-					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class=""><a href="#comics">COMICS</a></li>
-						<li class=""><a href="#news">NEWS</a></li>
-						<li><a href="#submissions">SUBMISSIONS</a></li>
-						<li><a href="https://snowyworks.bigcartel.com" target="_blank"><i class="fa fa-shopping-cart faz"></i> SHOP</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BUY DIGITAL<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss">Amazon</a></li>
-								<li><a href="https://www.comichaus.com/publishers/snowyworks/903.htm">Comichaus</a></li>
-								<li><a href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks">Drive Thru Comics</a></li>
-								<li><a href="https://play.google.com/store/books/author?id=Drew+D.+Lenhart">Google Play</a></li>
-								<li><a href="https://www.kobo.com/us/en/search?query=Drew+D.+Lenhart">Kobo</a></li>
-								<li><a href="https://globalcomix.com/a/snowyworks">GlobalComix</a></li>
-								<li><a href="https://gumroad.com/snowyworks">Gumroad</a></li>
-								<li><a href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks">Spinwhiz Comics</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://www.instagram.com/snowyworks/" class="icons" target="_blank"><i class="fab fa-instagram faz"></i></a></li>
-						<li><a href="https://twitter.com/LenhartDrew" class="icons" target="_blank"><i class="fab fa-twitter faz"></i></a></li>
-						<li><a href="https://www.facebook.com/drew.lenhart.35/" class="icons" target="_blank"><i class="fab fa-facebook faz"></i></a></li>
-						<li><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> CONTACT</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+      <div class="bg-color" style="background-image: url(images/testback2.png)">
+        <div class="row">
+          <div class="col-md-12" style="">
+            <center>
+              <img
+                src="images/home_image_sw_4.png"
+                alt="Awesome Comics!"
+                class="compImg centerMe padd-top"
+              />
+            </center>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end jumbotron -->
 
-		<div class="bg-color" style="background-image:url(images/testback2.png)">
-			<div class="row">
-				<div class="col-md-12" style="">
-					<center>
-						<img src="images/home_image_sw_4.png" alt="Awesome Comics!" class="compImg centerMe padd-top"  />
-					</center>
-				</div>
-			</div><!-- end row -->
-		</div>
-		<!-- end jumbotron -->
+      <div class="jumbotron jumbotron-override bg-img">
+        <div class="container">
+          <div class="row">
+            <center>
+              <h3 class="">GET OUR COMICS DIGITALLY ON THESE PLATFORMS:</h3>
+            </center>
+            <center>
+              <a
+                href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss"
+                target="_blank"
+              >
+                <img
+                  src="images/amazon-kindle-icon.png"
+                  width="64"
+                  height="64"
+                  title="Amazon Kindle"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/books/author?id=Drew+D.+Lenhart"
+                target="_blank"
+              >
+                <img
+                  src="images/google-play-black-icon.png"
+                  width="64"
+                  height="64"
+                  title="Google Play"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a
+                href="https://www.kobo.com/us/en/search?query=Drew+D.+Lenhart"
+                target="_blank"
+              >
+                <img
+                  src="images/kobo.png"
+                  width="64"
+                  height="64"
+                  title="Kobo"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a href="https://globalcomix.com/a/snowyworks" target="_blank">
+                <img
+                  src="images/global_comix_logo_2.png"
+                  width="64"
+                  height="64"
+                  title="GlobalComix"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a
+                href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks"
+                target="_blank"
+              >
+                <img
+                  src="images/drivethru-icon.png"
+                  width="64"
+                  height="64"
+                  title="DriveThruComics"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a href="https://gumroad.com/snowyworks" target="_blank">
+                <img
+                  src="images/gumroad.png"
+                  width="64"
+                  height="64"
+                  title="Gumroad"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a
+                href="https://www.comichaus.com/publishers/snowyworks/903.htm"
+                target="_blank"
+              >
+                <img
+                  src="images/comic-haus-icon.png"
+                  width="64"
+                  height="64"
+                  title="Comichaus"
+                  class="compImg centerMe"
+                />
+              </a>
+              <a
+                href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks"
+                target="_blank"
+              >
+                <img
+                  src="images/spin-logo.png"
+                  width="64"
+                  height="64"
+                  title="SpinWhiz Comics"
+                  class="compImg centerMe"
+                />
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
 
-		<div class="jumbotron jumbotron-override bg-img">
-			<div class="container">
-				<div class="row">
-					<center><h3 class="">GET OUR COMICS DIGITALLY ON THESE PLATFORMS:</h3></center>
-					<center>
-						<a href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss" target="_blank">
-							<img src="images/amazon-kindle-icon.png" width="64" height="64" title="Amazon Kindle" class="compImg centerMe" />
-						</a>
-						<a href="https://play.google.com/store/books/author?id=Drew+D.+Lenhart" target="_blank">
-							<img src="images/google-play-black-icon.png" width="64" height="64" title="Google Play" class="compImg centerMe" />
-						</a>
-						<a href="https://www.kobo.com/us/en/search?query=Drew+D.+Lenhart" target="_blank">
-							<img src="images/kobo.png" width="64" height="64" title="Kobo" class="compImg centerMe" />
-						</a>
-						<a href="https://globalcomix.com/a/snowyworks" target="_blank">
-							<img src="images/global_comix_logo_2.png" width="64" height="64" title="GlobalComix" class="compImg centerMe" />
-						</a>
-						<a href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks" target="_blank">
-							<img src="images/drivethru-icon.png" width="64" height="64" title="DriveThruComics" class="compImg centerMe" />
-						</a>
-						<a href="https://gumroad.com/snowyworks" target="_blank">
-							<img src="images/gumroad.png" width="64" height="64" title="Gumroad" class="compImg centerMe" />
-						</a>
-						<a href="https://www.comichaus.com/publishers/snowyworks/903.htm" target="_blank">
-							<img src="images/comic-haus-icon.png" width="64" height="64" title="Comichaus" class="compImg centerMe" />
-						</a>
-						<a href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks" target="_blank">
-							<img src="images/spin-logo.png" width="64" height="64" title="SpinWhiz Comics" class="compImg centerMe" />
-						</a>
-					</center>
-				</div>
-			</div>
-		</div>
-
-		<div id="" class="jumbotron bg-img">
-			<div class="container">
-				<div class="row">
-
-				<!-- Advertisement -->	
-				<!-- <div class="panel panel-primary space_bg" style="background-image:url(images/testback2.png)">
+      <div id="" class="jumbotron bg-img">
+        <div class="container">
+          <div class="row">
+            <!-- Advertisement -->
+            <!-- <div class="panel panel-primary space_bg" style="background-image:url(images/testback2.png)">
 					<div class="panel-body">
 						<div style="margin: 0 auto !important">
 							<div class="panel-body">
@@ -133,267 +296,478 @@ Date: June 2017 - updated 10-29-2023
 					</div>
 				</div> -->
 
-				<!--big buttons-->
-					<div class="panel panel-primary">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="https://globalcomix.com/c/caspian-porter/chapters/en/1/1" target="_blank">
-												<img src="images/caspian_porter_button.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">CASPIAN PORTER<br>READ ISSUE #0 FREE!</div>
-												</div>
-												</a>
-											</div>
-										</div>
+            <!--big buttons-->
+            <div class="panel panel-primary">
+              <div class="panel-body">
+                <div style="margin: 0 auto !important">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a
+                            href="https://globalcomix.com/c/caspian-porter/chapters/en/1/1"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/caspian_porter_button.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                CASPIAN PORTER<br />READ ISSUE #0 FREE!
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4">
-											<div class="image_container">
-												<a href="https://globalcomix.com/c/future-sci-fi-tales-spatial-void/chapters/en/1/1" target="_blank">
-													<img src="images/homepage_button_fscifi-6.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">FUTURE SCI-FI TALES<br>SPATIAL VOID</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4">
+                        <div class="image_container">
+                          <a
+                            href="https://globalcomix.com/c/future-sci-fi-tales-spatial-void/chapters/en/1/1"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/homepage_button_fscifi-6.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                FUTURE SCI-FI TALES<br />SPATIAL VOID
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="/preview/tales_from_dispatch_01.pdf" target="_blank">
-													<img src="images/tales_vol1_button.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">TALES FROM THE DISPATCH 1<br>READ NOW!</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a
+                            href="/preview/tales_from_dispatch_01.pdf"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/tales_vol1_button.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                TALES FROM THE DISPATCH 1<br />READ NOW!
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="/preview/tales_from_dispatch_02.pdf" target="_blank">
-													<img src="images/tales_vol2_button.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">TALES FROM THE DISPATCH 2<br>READ NOW!</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a
+                            href="/preview/tales_from_dispatch_02.pdf"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/tales_vol2_button.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                TALES FROM THE DISPATCH 2<br />READ NOW!
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="/preview/omth_preview.pdf" target="_blank">
-													<img src="images/homepage_button_horror.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">HORROR ANTHOLOGY!<br>PREVIEW!</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a href="/preview/omth_preview.pdf" target="_blank">
+                            <img
+                              src="images/homepage_button_horror.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                HORROR ANTHOLOGY!<br />PREVIEW!
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="https://www.kickstarter.com/projects/snowyworks/caspian-porter-2" target="_blank">
-													<img src="images/homepage_button_cas2.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">CASPIAN PORTER #2<br>KICKSTARTER LINK</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a
+                            href="https://www.kickstarter.com/projects/snowyworks/caspian-porter-2"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/homepage_button_cas2.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                CASPIAN PORTER #2<br />KICKSTARTER LINK
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="/preview/monsters_cleanup_guy_v2.pdf" target="_blank">
-													<img src="images/homepage_button_monsters.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">THE MONSTER'S CLEANUP GUY<br>READ NOW!</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a
+                            href="/preview/monsters_cleanup_guy_v2.pdf"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/homepage_button_monsters.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                THE MONSTER'S CLEANUP GUY<br />READ NOW!
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4" style="">
-											<div class="image_container">
-												<a href="/preview/fscifi_2020_preview.pdf" target="_blank">
-												<img src="images/homepage_button_future.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">FUTURE SCI-FI TALES 2020<br>PREVIEW</div>
-												</div>
-												</a>
-											</div>
-										</div>
+                      <div class="col-md-4" style="">
+                        <div class="image_container">
+                          <a
+                            href="/preview/fscifi_2020_preview.pdf"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/homepage_button_future.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                FUTURE SCI-FI TALES 2020<br />PREVIEW
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
 
-										<div class="col-md-4">
-											<div class="image_container">
-												<a href="https://globalcomix.com/c/gritt-grimstone/chapters/en/1/1" target="_blank">
-													<img src="images/homepage_button_gritt.png" alt="" class="imgBorder compImg centerMe" />
-												<div class="image_overlay">
-													<div class="image_text">GRITT GRIMSTONE<br>READ NOW!</div>
-												</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- end body-->
-							</div>
-						</div>
-					</div>
-					<!--end big buttons-->
+                      <div class="col-md-4">
+                        <div class="image_container">
+                          <a
+                            href="https://globalcomix.com/c/gritt-grimstone/chapters/en/1/1"
+                            target="_blank"
+                          >
+                            <img
+                              src="images/homepage_button_gritt.png"
+                              alt=""
+                              class="imgBorder compImg centerMe"
+                            />
+                            <div class="image_overlay">
+                              <div class="image_text">
+                                GRITT GRIMSTONE<br />READ NOW!
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end body-->
+                </div>
+              </div>
+            </div>
+            <!--end big buttons-->
 
-					<!--Comics Section-->
-					<div id="comics" class="panel panel-primary">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-12" style="">
-											<h2>COMICS CATALOG</h2><br />
-										</div>
-									</div>
-									<div class="row" id="comic-results">
+            <!--Comics Section-->
+            <div id="comics" class="panel panel-primary">
+              <div class="panel-body">
+                <div style="margin: 0 auto !important">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-12" style="">
+                        <h2>COMICS CATALOG</h2>
+                        <br />
+                      </div>
+                    </div>
+                    <div hx-ext="client-side-templates">
+                      <div
+                        hx-get="data/comic-data.json"
+                        hx-swap="afterend"
+                        hx-trigger="revealed"
+                        nunjucks-template="blogs-template"
+                      >
+                        <template id="blogs-template">
+                          {% for comic in results %}
+                          <div class="col-md-3 text-center">
+                            <img
+                              src="images/{{ comic.image }}"
+                              alt=""
+                              class="compImg shadowImg"
+                            /><br />
+                            <button
+                              class="btn btn-primary btn-spacing open-comicDialog"
+                              data-title="{{ comic.title }}"
+                              data-id="{{ comic.id }}"
+                              data-toggle="modal"
+                              data-target="#fsModal"
+                            >
+                              {{ comic.label }}
+                            </button>
+                          </div>
+                          {% endfor %}
+
+                          <!-- load more -->
+                          <center>
+                            {% if next %}
+                            <button
+                              class="btn btn-primary btn-lg"
+                              hx-get="{{ next }}"
+                              hx-swap="outerHTML"
+                              hx-trigger="click"
+                              nunjucks-template="blogs-template"
+                            >
+                              Load More...
+                            </button>
+                            {% endif %}
+                          </center>
+                        </template>
+                      </div>
+                    </div>
+                    <!-- original implementation
+									 <div class="row" id="comic-results">
 										<center>
 											<div id="loader" class="loader"></div>
 										</center>
-									</div>
-								</div>
-								<!--end panel body-->
-							</div>
-						</div>
-					</div>
-					<!--end comics section-->
+									</div> -->
+                  </div>
+                  <!--end panel body-->
+                </div>
+              </div>
+            </div>
+            <!--end comics section-->
 
-					<!--news-->
-					<div id="news" class="panel panel-primary">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-2" style="">
-											<h3><span class="label label-default snowLabel">NEWS!</span></h3>
-										</div>
-										<div class="col-md-10" style="">
-											<strong>February 03, 2023</strong><br />
-											INFO! <strong>Sign up for our newsletter!</strong><br />
-											SnowyWorks has multiple projects in the works for 2024, sign up for our newsletter to keep up to date, 
-											<a href="https://sendfox.com/snowyworks" target="_blank">Click here.</a>
-										</div>
-									</div>
-									<br /><br />
+            <!--news-->
+            <div id="news" class="panel panel-primary">
+              <div class="panel-body">
+                <div style="margin: 0 auto !important">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-2" style="">
+                        <h3>
+                          <span class="label label-default snowLabel"
+                            >NEWS!</span
+                          >
+                        </h3>
+                      </div>
+                      <div class="col-md-10" style="">
+                        <strong>February 03, 2023</strong><br />
+                        INFO! <strong>Sign up for our newsletter!</strong><br />
+                        SnowyWorks has multiple projects in the works for 2024,
+                        sign up for our newsletter to keep up to date,
+                        <a href="https://sendfox.com/snowyworks" target="_blank"
+                          >Click here.</a
+                        >
+                      </div>
+                    </div>
+                    <br /><br />
 
-									<div class="row">
-										<div class="col-md-2" style="">
-											<h3><span class="label label-default snowLabel">NEWS!</span></h3>
-										</div>
-										<div class="col-md-10" style="">
-											<strong>September 17, 2023</strong><br />
-											INFO! <strong>The Monster's Cleanup Guy Volume 1 OPEN for pre orders!</strong><br />
-											Collecting issues 1 & 2 of the monster book series, available for pre orders NOW!
-											<a href="https://thercade.com/products/the-monsters-cleanup-guy" target="_blank">Click here.</a>
-										</div>
-									</div>
-									<br /><br />
+                    <div class="row">
+                      <div class="col-md-2" style="">
+                        <h3>
+                          <span class="label label-default snowLabel"
+                            >NEWS!</span
+                          >
+                        </h3>
+                      </div>
+                      <div class="col-md-10" style="">
+                        <strong>September 17, 2023</strong><br />
+                        INFO!
+                        <strong
+                          >The Monster's Cleanup Guy Volume 1 OPEN for pre
+                          orders!</strong
+                        ><br />
+                        Collecting issues 1 & 2 of the monster book series,
+                        available for pre orders NOW!
+                        <a
+                          href="https://thercade.com/products/the-monsters-cleanup-guy"
+                          target="_blank"
+                          >Click here.</a
+                        >
+                      </div>
+                    </div>
+                    <br /><br />
 
-									<div class="row">
-										<div class="col-md-2" style="">
-											<h3><span class="label label-default snowLabel">NEWS!</span></h3>
-										</div>
-										<div class="col-md-10" style="">
-											<strong>August 27, 2023</strong><br />
-											INFO! <strong>Future Sci-Fi Tales: Starfall NOW LIVE!</strong><br />
-											The newest installment in the anthology series, Starfall, features 9 science fiction stories.
-											<a href="https://www.kickstarter.com/projects/snowyworks/future-sci-fi-tales-starfall-science-fiction-anthology" target="_blank">Click here.</a>
-										</div>
-									</div>
-									<br /><br />
+                    <div class="row">
+                      <div class="col-md-2" style="">
+                        <h3>
+                          <span class="label label-default snowLabel"
+                            >NEWS!</span
+                          >
+                        </h3>
+                      </div>
+                      <div class="col-md-10" style="">
+                        <strong>August 27, 2023</strong><br />
+                        INFO!
+                        <strong>Future Sci-Fi Tales: Starfall NOW LIVE!</strong
+                        ><br />
+                        The newest installment in the anthology series,
+                        Starfall, features 9 science fiction stories.
+                        <a
+                          href="https://www.kickstarter.com/projects/snowyworks/future-sci-fi-tales-starfall-science-fiction-anthology"
+                          target="_blank"
+                          >Click here.</a
+                        >
+                      </div>
+                    </div>
+                    <br /><br />
 
-									<div class="row">
-										<div class="col-md-2" style="">
-											<h3><span class="label label-default snowLabel">NEWS!</span></h3>
-										</div>
-										<div class="col-md-10" style="">
-											<strong>May 19, 2023</strong><br />
-											INFO! <strong>Caspian Porter #4</strong><br />
-											Caspian Porter #4 is now out on Kickstarter, grab your copy today! 
-											<a href="https://www.kickstarter.com/projects/snowyworks/caspian-porter-4-the-battle-of-rooster-valley-tpb" target="_blank">Click here.</a>
-										</div>
-									</div>
-									<br /><br />
+                    <div class="row">
+                      <div class="col-md-2" style="">
+                        <h3>
+                          <span class="label label-default snowLabel"
+                            >NEWS!</span
+                          >
+                        </h3>
+                      </div>
+                      <div class="col-md-10" style="">
+                        <strong>May 19, 2023</strong><br />
+                        INFO! <strong>Caspian Porter #4</strong><br />
+                        Caspian Porter #4 is now out on Kickstarter, grab your
+                        copy today!
+                        <a
+                          href="https://www.kickstarter.com/projects/snowyworks/caspian-porter-4-the-battle-of-rooster-valley-tpb"
+                          target="_blank"
+                          >Click here.</a
+                        >
+                      </div>
+                    </div>
+                    <br /><br />
 
-									<div class="row">
-										<div class="col-md-2" style="">
-											<h3><span class="label label-default snowLabel">NEWS!</span></h3>
-										</div>
-										<div class="col-md-10" style="">
-											<strong>August 28, 2022</strong><br />
-											INFO! <strong>CHECK OUT OUR ONLINE SHOP!</strong><br />
-											SnowyWorks online shop is stacked with a ton of titles and variant offerings!  Check out the deals!
-											<a href="https://snowyworks.bigcartel.com/" target="_blank">Click here.</a>
-										</div>
-									</div>
-									<br /><br />
+                    <div class="row">
+                      <div class="col-md-2" style="">
+                        <h3>
+                          <span class="label label-default snowLabel"
+                            >NEWS!</span
+                          >
+                        </h3>
+                      </div>
+                      <div class="col-md-10" style="">
+                        <strong>August 28, 2022</strong><br />
+                        INFO! <strong>CHECK OUT OUR ONLINE SHOP!</strong><br />
+                        SnowyWorks online shop is stacked with a ton of titles
+                        and variant offerings! Check out the deals!
+                        <a
+                          href="https://snowyworks.bigcartel.com/"
+                          target="_blank"
+                          >Click here.</a
+                        >
+                      </div>
+                    </div>
+                    <br /><br />
 
-									<div class="row">
-										<div class="col-md-2" style="">
-											<h3><span class="label label-default snowLabel">NEWS!</span></h3>
-										</div>
-										<div class="col-md-10" style="">
-											<strong>April 24, 2022</strong><br />
-											INFO! <strong>THE MONSTER'S CLEANUP GUY #1 OUT NOW!</strong><br />
-											Available now is the first FULL issue of The Monster's Cleanup Guy.  This is an extension of the original short story released in 
-											2020.  The book contains 24 black and white pages of horror awesomeness!  Get it now for only $3.00 + shipping!
-											<a href="https://snowyworks.bigcartel.com/product/the-monster-s-cleanup-guy" target="_blank">Click here.</a>
-										</div>
-									</div>
-									<br /><br />
-								</div><!-- end body-->
-							</div>
-						</div>
-					</div>
-					<!--end news-->
+                    <div class="row">
+                      <div class="col-md-2" style="">
+                        <h3>
+                          <span class="label label-default snowLabel"
+                            >NEWS!</span
+                          >
+                        </h3>
+                      </div>
+                      <div class="col-md-10" style="">
+                        <strong>April 24, 2022</strong><br />
+                        INFO!
+                        <strong>THE MONSTER'S CLEANUP GUY #1 OUT NOW!</strong
+                        ><br />
+                        Available now is the first FULL issue of The Monster's
+                        Cleanup Guy. This is an extension of the original short
+                        story released in 2020. The book contains 24 black and
+                        white pages of horror awesomeness! Get it now for only
+                        $3.00 + shipping!
+                        <a
+                          href="https://snowyworks.bigcartel.com/product/the-monster-s-cleanup-guy"
+                          target="_blank"
+                          >Click here.</a
+                        >
+                      </div>
+                    </div>
+                    <br /><br />
+                  </div>
+                  <!-- end body-->
+                </div>
+              </div>
+            </div>
+            <!--end news-->
 
-					<div class="panel panel-primary space_bg">
-						<div class="panel-body">
-							<div style="margin: 0 auto !important">
-								<div class="panel-body">
-									<div class="row">
-										<center>
-											<img src="images/the_works.png" class="compImg" alt="" width="450" height="105" /><br /><br />
-											<a href="https://sendfox.com/snowyworks" class="btn btn-primary btn-lg">NEWSLETTER SIGN UP HERE!</a>
-										
-											<br /><br />Get the latest info on SnowyWorks publications, upcoming projects, artwork, campaigns, and more!
-										</center>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--End comics row-->
+            <div class="panel panel-primary space_bg">
+              <div class="panel-body">
+                <div style="margin: 0 auto !important">
+                  <div class="panel-body">
+                    <div class="row">
+                      <center>
+                        <img
+                          src="images/the_works.png"
+                          class="compImg"
+                          alt=""
+                          width="450"
+                          height="105"
+                        /><br /><br />
+                        <a
+                          href="https://sendfox.com/snowyworks"
+                          class="btn btn-primary btn-lg"
+                          >NEWSLETTER SIGN UP HERE!</a
+                        >
 
-		<!--Another Section -->
-		<div id="submissions" class="jumbotron jum-back" style="background-image:url(images/testback2.png)">
+                        <br /><br />Get the latest info on SnowyWorks
+                        publications, upcoming projects, artwork, campaigns, and
+                        more!
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End comics row-->
 
-			<div class="panel panel-primary">
-				<div class="panel-body">
-					<h2>SUBMISSIONS</h2>
-					<span style="font-size: 16px !important">
-						<br />
-						<img src="images/tales_logo_sw.png" class="compImg" alt="" />
-						<br /><br />
+      <!--Another Section -->
+      <div
+        id="submissions"
+        class="jumbotron jum-back"
+        style="background-image: url(images/testback2.png)"
+      >
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <h2>SUBMISSIONS</h2>
+            <span style="font-size: 16px !important">
+              <br />
+              <img src="images/tales_logo_sw.png" class="compImg" alt="" />
+              <br /><br />
 
-						<center>Presented by SnowyWorks LLC & The Indie Comix Dispatch</center><br /><br />
+              <center>
+                Presented by SnowyWorks LLC & The Indie Comix Dispatch
+              </center>
+              <br /><br />
 
-						Submission period:  CLOSED <u></u><br /><br />
+              Submission period: CLOSED <u></u><br /><br />
 
-						<strong><em>We are not accepting submissions for this issue at this time.  Please check back soon!</em></strong><br /><br />
+              <strong
+                ><em
+                  >We are not accepting submissions for this issue at this time.
+                  Please check back soon!</em
+                ></strong
+              ><br /><br />
 
-						<!--Do you want to get published? Indie Comix Dispatch and SnowyWorks are teaming up again, but this year we also have 
+              <!--Do you want to get published? Indie Comix Dispatch and SnowyWorks are teaming up again, but this year we also have 
 						Lesser Known Comics as a sponsor!  Together, we are putting together a brand new anthology book and we are looking for up-and-coming 
 						creators to submit their short stories for inclusion into Tales of the Dispatch Volume 3. 
 						<br /><br />
@@ -406,117 +780,190 @@ Date: June 2017 - updated 10-29-2023
 						<br /><br />
 						The contest begins on November 10, 2021!  Please read and carefully review the following submission guidelines.-->
 
-						<center>
-							<a href="https://indiecomixdispatch.com/anthology/" target="_blank" class="btn btn-primary ">More info</a>
-						</center>
-					</span>
-				</div>
-			</div>
-		</div><!-- end jumbotron -->
+              <center>
+                <a
+                  href="https://indiecomixdispatch.com/anthology/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >More info</a
+                >
+              </center>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end jumbotron -->
 
-		<div id="contact" class="jumbotron bg-img">
-			<div class="container">
-				<div class="row">
-					<h2>CONTACT</h2><br />
-					<form method="POST" action="https://formspree.io/snowyworks2018@gmail.com">
-						<input type="hidden" name="_subject" value="Contact request from SNOWYWORKS" />
+      <div id="contact" class="jumbotron bg-img">
+        <div class="container">
+          <div class="row">
+            <h2>CONTACT</h2>
+            <br />
+            <form
+              method="POST"
+              action="https://formspree.io/snowyworks2018@gmail.com"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Contact request from SNOWYWORKS"
+              />
 
-						<label for="email"><b>*E-Mail: </b></label><br />
-						<input type="text" class="form-control" placeholder="Your Email Address" id="email" name="_replyto" required>
-						<br />
+              <label for="email"><b>*E-Mail: </b></label><br />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email Address"
+                id="email"
+                name="_replyto"
+                required
+              />
+              <br />
 
-						<label for="message"><b>*Message: </b></label><br />
-						<textarea class="form-control" rows="3" name="message" id="message" placeholder="Leave a message!" required></textarea>
-						<br /><br />
-						<input name="save" type="submit" id="submit" value="SEND" class="btn btn-primary btn-lg" />
-						<input type="reset" id="cancel" name="reset" value="RESET" class="btn btn-danger btn-lg" />
-					</form>
-				</div>
-			</div>
-		</div>
+              <label for="message"><b>*Message: </b></label><br />
+              <textarea
+                class="form-control"
+                rows="3"
+                name="message"
+                id="message"
+                placeholder="Leave a message!"
+                required
+              ></textarea>
+              <br /><br />
+              <input
+                name="save"
+                type="submit"
+                id="submit"
+                value="SEND"
+                class="btn btn-primary btn-lg"
+              />
+              <input
+                type="reset"
+                id="cancel"
+                name="reset"
+                value="RESET"
+                class="btn btn-danger btn-lg"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
 
-		<!--About Section -->
-		<div id="about" class="jumbotron jum-back" style="background-image:url(images/testback2.png)">
+      <!--About Section -->
+      <div
+        id="about"
+        class="jumbotron jum-back"
+        style="background-image: url(images/testback2.png)"
+      >
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <h2>ABOUT</h2>
+            <span style="font-size: 16px !important">
+              <strong>SnowyWorks</strong> was founded in 2018 by Drew D. Lenhart
+              and is based in New Haven, Indiana. The company began with its
+              core publication, Future Sci-Fi Tales, a science fiction anthology
+              series featuring stories from independent comic creators. Since
+              then, the company has sky rocketed with new titles, including
+              one-shots such as De-Aged and Calzer's Clock, Bitter Awakening, as
+              well as new ongoing series Caspian Porter and The Monster's
+              Cleanup Guy.<br /><br />
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end jumbotron -->
 
-			<div class="panel panel-primary">
-				<div class="panel-body">
-					<h2>ABOUT</h2>
-					<span style="font-size: 16px !important">
-						<strong>SnowyWorks</strong> was founded in 2018 by Drew D. Lenhart and is based in New Haven, Indiana. The company began with its core publication, 
-						Future Sci-Fi Tales, a science fiction anthology series featuring stories from independent comic creators. Since then, the company has sky rocketed
-						with new titles, including one-shots such as De-Aged and Calzer's Clock, Bitter Awakening, as well as new ongoing series Caspian Porter and 
-						The Monster's Cleanup Guy.<br /><br />
-					</span>
-				</div>
-			</div>
-		</div><!-- end jumbotron -->
+      <div
+        class="jumbotron jum-back borderTop"
+        style="background-image: url(images/testback2.png)"
+      >
+        <div class="row">
+          <div class="col-md-8 bottom-footer" style="color: #999 !important">
+            Copyright 2018-2024 SnowyWorks LLC. Designed by
+            <a href="https://drewlenhart.com">Drew D. Lenhart</a> <br />
+            <div id="digitalBox">
+              <em
+                >Website best viewed in a modern browser. You can view the
+                source code at
+                <a
+                  href="https://github.com/snowyworks/snowyworks.github.io"
+                  target="_blank"
+                  >GitHub</a
+                >.</em
+              >
+            </div>
+          </div>
+          <div class="col-md-4" style="color: #999 !important">
+            <center>
+              <img
+                src="images/new_modern_snowyworks.png"
+                alt=""
+                class="centerMe"
+                width="200"
+                height="40"
+              />
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end container-->
 
-		<div class="jumbotron jum-back borderTop" style="background-image:url(images/testback2.png)">
-			<div class="row">
-					<div class="col-md-8 bottom-footer" style="color: #999 !important">
-						Copyright 2018-2024 SnowyWorks LLC. Designed by <a href="https://drewlenhart.com">Drew D. Lenhart</a>
-						<br /><div id="digitalBox"><em>Website best viewed in a modern browser. You can view the source code at
-							 <a href="https://github.com/snowyworks/snowyworks.github.io" target="_blank">GitHub</a>.</em></div>
-					</div>
-					<div class="col-md-4" style="color: #999 !important">
-						<center>
-							<img src="images/new_modern_snowyworks.png" alt="" class="centerMe" width="200" height="40" />
-						</center>
-					</div>
-			</div>
-		</div>
-	</div><!-- end container-->
+    <!-- modal -->
+    <div
+      id="fsModal"
+      class="modal animated bounceIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="modal-title-bar" class="modal-title">Loading....</h1>
+          </div>
+          <div class="modal-body" id="modal-body-content">
+            <div id="modal-results"></div>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-primary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- modal -->
-	<div id="fsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h1 id="modal-title-bar" class="modal-title">
-						Loading....
-					</h1>
-				</div>
-				<div class="modal-body" id="modal-body-content">
-					<div id="modal-results"></div>
-				</div>
-				<div class="modal-footer">
-					<button data-dismiss="modal" class="btn btn-primary">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/snowyworks-app.js?v=39"></script>
+    <script>
+      // Modal click & load comic dialog
+      $(document).on("click", ".open-comicDialog", function () {
+        let comicID = $(this).data("id");
+        let title = $(this).data("title");
+        let resultsDiv = $("#modal-results");
 
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/snowyworks-app.js?v=39"></script>
-	<script>
-		// Modal click & load comic dialog
-		$(document).on("click", ".open-comicDialog", function() {
-			let comicID = $(this).data('id');
-			let title = $(this).data('title');
-			let resultsDiv = $("#modal-results");
+        resultsDiv.html("");
 
-			resultsDiv.html('');
+        $(".modal-header #modal-title-bar").html(title);
 
-			$(".modal-header #modal-title-bar").html(title);
+        $.get("comics/" + comicID + "-comic.html", function (data) {
+          resultsDiv.html(data);
+        })
+          .done(function () {
+            //send success
+          })
+          .fail(function () {
+            resultsDiv.html("<h2>Unable to find this issue!</h2>");
+          })
+          .always(function () {
+            //always perform for every request
+          });
+      });
 
-			$.get("comics/" + comicID + "-comic.html", function(data) {
-					resultsDiv.html(data);
-				}).done(function() {
-					//send success
-				})
-				.fail(function() {
-					resultsDiv.html("<h2>Unable to find this issue!</h2>");
-				})
-				.always(function() {
-					//always perform for every request
-				});
-		});
-
-		$(document).ready(function() {
-			loadComicCatalog("comic-results", false, "loader");
-		});
-	</script>
-</body>
-
+      $(document).ready(function () {
+        loadComicCatalog("comic-results", false, "loader");
+      });
+    </script>
+  </body>
 </html>
