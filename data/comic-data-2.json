@@ -3,6 +3,30 @@
     "next": null,
     "results": [
 {
+    "title": "Tales From the Dispatch",
+    "id": "tales2",
+    "label": "TFTD Vol #2",
+    "image": "vol2_cover_300.jpg"
+},
+{
+    "title": "Caspian Porter",
+    "id": "caspian",
+    "label": "Caspian Porter #1",
+    "image": "caspian_small.jpg"
+},
+{
+    "title": "Caspian Porter",
+    "id": "caspian0",
+    "label": "Caspian Porter #0",
+    "image": "caspian_zero_small.jpg"
+},
+{
+    "title": "Calzer's Clock",
+    "id": "calzers",
+    "label": "Calzer's Clock #1",
+    "image": "calzersSmall.png"
+},
+{
     "title": "The Monster's Cleanup Guy",
     "id": "monsters",
     "label": "Monster's Cleanup Guy (short)",
