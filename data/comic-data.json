@@ -3,6 +3,18 @@
     "next": "data/comic-data-2.json",
     "results": [
         {
+        "title": "Weston's Revenge",
+        "id": "weston",
+        "label": "Weston's Revenge",
+        "image": "weston-300.png"
+        },
+        {
+        "title": "Tin Can",
+        "id": "tincan",
+        "label": "Tin Can #1",
+        "image": "tin-can-300.png"
+        },
+        {
         "title": "The Art of Dell Barras",
         "id": "dell",
         "label": "The Art of Dell Barras",
@@ -85,18 +97,6 @@
         "id": "monsters1",
         "label": "The Monster's Cleanup Guy #1",
         "image": "tmcug-300.png"
-        },
-        {
-        "title": "Future Sci-Fi Tales: Spatial Void",
-        "id": "fscifi6",
-        "label": "FSCIFI Spatial Void",
-        "image": "fscifi_300.png"
-        },
-        {
-        "title": "Tales From the Dispatch",
-        "id": "tales1",
-        "label": "TFTD Vol #1",
-        "image": "vol1_cover_300.jpg"
         }
     ]
 }

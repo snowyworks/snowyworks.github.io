@@ -1,7 +1,19 @@
 {
-    "count": 10,
-    "next": null,
+    "count": 16,
+    "next": "data/comic-data-3.json",
     "results": [
+{
+    "title": "Future Sci-Fi Tales: Spatial Void",
+    "id": "fscifi6",
+    "label": "FSCIFI Spatial Void",
+    "image": "fscifi_300.png"
+},
+{
+    "title": "Tales From the Dispatch",
+    "id": "tales1",
+    "label": "TFTD Vol #1",
+    "image": "vol1_cover_300.jpg"
+},
 {
     "title": "Tales From the Dispatch",
     "id": "tales2",
@@ -85,18 +97,6 @@
     "id": "fscifi2",
     "label": "Future Sci-Fi Tales #2",
     "image": "fscifi02-mini.png"
-    },
-    {
-    "title": "Future Sci-Fi Tales",
-    "id": "fscifi1",
-    "label": "Future Sci-Fi Tales #1",
-    "image": "fscifi-post.png"
-    },
-    {
-    "title": "Crizens",
-    "id": "crizens",
-    "label": "Crizens #1",
-    "image": "CrizensCoverSM.png"
     }
 ]
 }

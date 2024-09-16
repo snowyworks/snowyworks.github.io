@@ -1,0 +1,18 @@
+{
+    "count": 2,
+    "next": null,
+    "results": [
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi1",
+    "label": "Future Sci-Fi Tales #1",
+    "image": "fscifi-post.png"
+    },
+    {
+    "title": "Crizens",
+    "id": "crizens",
+    "label": "Crizens #1",
+    "image": "CrizensCoverSM.png"
+    }
+]
+}
