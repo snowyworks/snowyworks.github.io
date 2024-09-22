@@ -3,6 +3,12 @@
     "next": "data/comic-data-2.json",
     "results": [
         {
+        "title": "Never by Night: Disturbing Passages Into the Unknown",
+        "id": "nbn",
+        "label": "Never by Night",
+        "image": "nbn-300.jpg"
+        },
+        {
         "title": "Weston's Revenge",
         "id": "weston",
         "label": "Weston's Revenge",
@@ -91,12 +97,6 @@
         "id": "tales3",
         "label": "TFTD Vol #3",
         "image": "tftd-3-300.png"
-        },
-        {
-        "title": "The Monster's Cleanup Guy #1",
-        "id": "monsters1",
-        "label": "The Monster's Cleanup Guy #1",
-        "image": "tmcug-300.png"
         }
     ]
 }

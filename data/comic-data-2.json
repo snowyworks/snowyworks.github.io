@@ -3,6 +3,12 @@
     "next": "data/comic-data-3.json",
     "results": [
 {
+    "title": "The Monster's Cleanup Guy #1",
+    "id": "monsters1",
+    "label": "The Monster's Cleanup Guy #1",
+    "image": "tmcug-300.png"
+},
+{
     "title": "Future Sci-Fi Tales: Spatial Void",
     "id": "fscifi6",
     "label": "FSCIFI Spatial Void",
@@ -91,12 +97,6 @@
     "id": "fscifi3",
     "label": "Future Sci-Fi Tales #3",
     "image": "fscifi-cover1sm.png"
-    },
-    {
-    "title": "Future Sci-Fi Tales",
-    "id": "fscifi2",
-    "label": "Future Sci-Fi Tales #2",
-    "image": "fscifi02-mini.png"
     }
 ]
 }

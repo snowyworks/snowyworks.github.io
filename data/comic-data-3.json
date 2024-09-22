@@ -4,6 +4,12 @@
     "results": [
     {
     "title": "Future Sci-Fi Tales",
+    "id": "fscifi2",
+    "label": "Future Sci-Fi Tales #2",
+    "image": "fscifi02-mini.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
     "id": "fscifi1",
     "label": "Future Sci-Fi Tales #1",
     "image": "fscifi-post.png"
