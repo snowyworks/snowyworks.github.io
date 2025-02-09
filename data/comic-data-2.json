@@ -3,6 +3,24 @@
     "next": "data/comic-data-3.json",
     "results": [
 {
+    "title": "Caspian Porter #3",
+    "id": "caspian3",
+    "label": "Caspian Porter #3",
+    "image": "caspian-3-300.png"
+},
+{
+    "title": "Caspian Porter #2",
+    "id": "caspian2",
+    "label": "Caspian Porter #2",
+    "image": "caspian-2-300.png"
+},
+{
+    "title": "Tales From the Dispatch",
+    "id": "tales3",
+    "label": "TFTD Vol #3",
+    "image": "tftd-3-300.png"
+},
+{
     "title": "The Monster's Cleanup Guy #1",
     "id": "monsters1",
     "label": "The Monster's Cleanup Guy #1",
@@ -79,24 +97,6 @@
     "id": "expedition",
     "label": "Expedition Zombie #1",
     "image": "expZombieSM.png"
-    },
-    {
-    "title": "Bitter Awakening",
-    "id": "bitter",
-    "label": "Bitter Awakening #1",
-    "image": "baCoverSM.png"
-    },
-    {
-    "title": "Future Sci-Fi Tales",
-    "id": "fscifi4",
-    "label": "Future Sci-Fi Tales #4",
-    "image": "fscifi_04_cover_sm.png"
-    },
-    {
-    "title": "Future Sci-Fi Tales",
-    "id": "fscifi3",
-    "label": "Future Sci-Fi Tales #3",
-    "image": "fscifi-cover1sm.png"
     }
 ]
 }

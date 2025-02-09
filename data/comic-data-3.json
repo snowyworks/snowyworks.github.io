@@ -1,7 +1,25 @@
 {
-    "count": 2,
+    "count": 6,
     "next": null,
     "results": [
+    {
+    "title": "Bitter Awakening",
+    "id": "bitter",
+    "label": "Bitter Awakening #1",
+    "image": "baCoverSM.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi4",
+    "label": "Future Sci-Fi Tales #4",
+    "image": "fscifi_04_cover_sm.png"
+    },
+    {
+    "title": "Future Sci-Fi Tales",
+    "id": "fscifi3",
+    "label": "Future Sci-Fi Tales #3",
+    "image": "fscifi-cover1sm.png"
+    },
     {
     "title": "Future Sci-Fi Tales",
     "id": "fscifi2",

@@ -3,6 +3,24 @@
     "next": "data/comic-data-2.json",
     "results": [
         {
+        "title": "De-Aged (Special Edition)",
+        "id": "deagedse",
+        "label": "De-Aged (SE)",
+        "image": "deaged-se-300.jpg"
+        },
+        {
+        "title": "Midnyght Tryfecta",
+        "id": "midnight",
+        "label": "Midnyght Tryfecta",
+        "image": "midnight-300.jpg"
+        },
+        {
+        "title": "Future Sci-Fi Tales: Distant",
+        "id": "fscifidistant",
+        "label": "FSCIFI Distant",
+        "image": "distant-300.jpg"
+        },
+        {
         "title": "Never by Night: Disturbing Passages Into the Unknown",
         "id": "nbn",
         "label": "Never by Night",
@@ -79,24 +97,6 @@
         "id": "grimstone",
         "label": "Gritt Grimstone",
         "image": "grimstone-300.png"
-        },
-        {
-        "title": "Caspian Porter #3",
-        "id": "caspian3",
-        "label": "Caspian Porter #3",
-        "image": "caspian-3-300.png"
-        },
-        {
-        "title": "Caspian Porter #2",
-        "id": "caspian2",
-        "label": "Caspian Porter #2",
-        "image": "caspian-2-300.png"
-        },
-        {
-        "title": "Tales From the Dispatch",
-        "id": "tales3",
-        "label": "TFTD Vol #3",
-        "image": "tftd-3-300.png"
         }
     ]
 }
