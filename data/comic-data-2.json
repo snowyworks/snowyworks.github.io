@@ -3,6 +3,12 @@
     "next": "data/comic-data-3.json",
     "results": [
 {
+    "title": "Gritt Grimstone: Tales From A Far Out Future",
+    "id": "grimstone",
+    "label": "Gritt Grimstone",
+    "image": "grimstone-300.png"
+},
+{
     "title": "Caspian Porter #3",
     "id": "caspian3",
     "label": "Caspian Porter #3",
@@ -91,12 +97,6 @@
     "id": "stones",
     "label": "Stones #1 of 2",
     "image": "stones-cover-sm.jpg"
-    },
-    {
-    "title": "Expedition Zombie",
-    "id": "expedition",
-    "label": "Expedition Zombie #1",
-    "image": "expZombieSM.png"
     }
 ]
 }

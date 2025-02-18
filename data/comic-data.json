@@ -63,6 +63,12 @@
         "image": "tftd-5-300.png"
         },
         {
+        "title": "Far Out Futures",
+        "id": "farout",
+        "label": "Far Out Futures",
+        "image": "farout-300.png"
+        },
+        {
         "title": "Future Sci-Fi Tales: Starfall",
         "id": "fscifi7",
         "label": "FSCIFI Spatial Void",
@@ -71,7 +77,7 @@
         {
         "title": "The Monster's Cleanup Guy Vol 1",
         "id": "monstersv1",
-        "label": "The Monster's Cleanup Guy V1",
+        "label": "TMCUG V1",
         "image": "monsters-v1-300.png"
         },
         {
@@ -91,12 +97,6 @@
         "id": "caspian4",
         "label": "Caspian Porter #4",
         "image": "caspian-4-300.png"
-        },
-        {
-        "title": "Gritt Grimstone: Tales From A Far Out Future",
-        "id": "grimstone",
-        "label": "Gritt Grimstone",
-        "image": "grimstone-300.png"
         }
     ]
 }

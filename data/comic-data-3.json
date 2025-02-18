@@ -1,7 +1,13 @@
 {
-    "count": 6,
+    "count": 7,
     "next": null,
     "results": [
+    {
+    "title": "Expedition Zombie",
+    "id": "expedition",
+    "label": "Expedition Zombie #1",
+    "image": "expZombieSM.png"
+    },
     {
     "title": "Bitter Awakening",
     "id": "bitter",
