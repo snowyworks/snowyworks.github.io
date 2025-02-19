@@ -24,7 +24,7 @@ video {
 
 .jumbotron-override {
   padding-top: 15px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 1px !important;
 }
 
 a.link {

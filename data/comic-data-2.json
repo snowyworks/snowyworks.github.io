@@ -41,7 +41,7 @@
 {
     "title": "The Monster's Cleanup Guy #1",
     "id": "monsters1",
-    "label": "The Monster's Cleanup Guy #1",
+    "label": "TMCUG #1",
     "image": "tmcug-300.png"
 },
 {
@@ -81,9 +81,15 @@
     "image": "calzersSmall.png"
 },
 {
+    "title": "Stones",
+    "id": "stones",
+    "label": "Stones",
+    "image": "stones-cover-sm.jpg"
+},
+{
     "title": "The Monster's Cleanup Guy",
     "id": "monsters",
-    "label": "Monster's Cleanup Guy (short)",
+    "label": "TMCUG (Short)",
     "image": "mcug-digital-small.jpg"
 },
 {
@@ -91,12 +97,6 @@
     "id": "fscifi2020",
     "label": "Future Sci-Fi Tales 2020",
     "image": "fscifi2020Small.png"
-},
-{
-    "title": "Oh My, the Horror!",
-    "id": "omth",
-    "label": "Oh My, the Horror! #1",
-    "image": "horrorMagSmall.png"
-    }
+}
 ]
 }

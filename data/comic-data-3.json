@@ -3,16 +3,16 @@
     "next": null,
     "results": [
     {
+    "title": "Oh My, the Horror!",
+    "id": "omth",
+    "label": "Oh My, the Horror! #1",
+    "image": "horrorMagSmall.png"
+    },
+    {
     "title": "De-Aged",
     "id": "deaged",
     "label": "De-Aged #1",
     "image": "deaged_logo_sm.png"
-    },
-    {
-    "title": "Stones",
-    "id": "stones",
-    "label": "Stones #1 of 2",
-    "image": "stones-cover-sm.jpg"
     },
     {
     "title": "Expedition Zombie",
