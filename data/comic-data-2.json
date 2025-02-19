@@ -3,6 +3,18 @@
     "next": "data/comic-data-3.json",
     "results": [
 {
+    "title": "Tales From the Dispatch",
+    "id": "tales4",
+    "label": "TFTD Vol #4",
+    "image": "tftd-4-300.png"
+},
+{
+    "title": "Caspian Porter #4",
+    "id": "caspian4",
+    "label": "Caspian Porter #4",
+    "image": "caspian-4-300.png"
+},
+{
     "title": "Gritt Grimstone: Tales From A Far Out Future",
     "id": "grimstone",
     "label": "Gritt Grimstone",
@@ -85,18 +97,6 @@
     "id": "omth",
     "label": "Oh My, the Horror! #1",
     "image": "horrorMagSmall.png"
-    },
-    {
-    "title": "De-Aged",
-    "id": "deaged",
-    "label": "De-Aged #1",
-    "image": "deaged_logo_sm.png"
-    },
-    {
-    "title": "Stones",
-    "id": "stones",
-    "label": "Stones #1 of 2",
-    "image": "stones-cover-sm.jpg"
     }
 ]
 }

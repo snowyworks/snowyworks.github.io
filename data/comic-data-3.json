@@ -1,7 +1,19 @@
 {
-    "count": 7,
+    "count": 9,
     "next": null,
     "results": [
+    {
+    "title": "De-Aged",
+    "id": "deaged",
+    "label": "De-Aged #1",
+    "image": "deaged_logo_sm.png"
+    },
+    {
+    "title": "Stones",
+    "id": "stones",
+    "label": "Stones #1 of 2",
+    "image": "stones-cover-sm.jpg"
+    },
     {
     "title": "Expedition Zombie",
     "id": "expedition",

@@ -15,12 +15,6 @@
         "image": "midnight-300.jpg"
         },
         {
-        "title": "Future Sci-Fi Tales: Distant",
-        "id": "fscifidistant",
-        "label": "FSCIFI Distant",
-        "image": "distant-300.jpg"
-        },
-        {
         "title": "Never by Night: Disturbing Passages Into the Unknown",
         "id": "nbn",
         "label": "Never by Night",
@@ -31,6 +25,18 @@
         "id": "weston",
         "label": "Weston's Revenge",
         "image": "weston-300.png"
+        },
+        {
+        "title": "Alcott Ainsworth #1",
+        "id": "alcott",
+        "label": "Alcott Ainsworth",
+        "image": "alcott-300.jpg"
+        },
+        {
+        "title": "Future Sci-Fi Tales: Distant",
+        "id": "fscifidistant",
+        "label": "FSCIFI Distant",
+        "image": "distant-300.jpg"
         },
         {
         "title": "Tin Can",
@@ -49,6 +55,12 @@
         "id": "grimstone-2",
         "label": "Gritt Grimstone",
         "image": "grimstone-new-300.png"
+        },
+        {
+        "title": "Calzer's Clock Special Edition",
+        "id": "calzerse",
+        "label": "Calzer's Clock SE",
+        "image": "calzerse-300.jpg"
         },
         {
         "title": "Samara & The Rangers of Centaria",
@@ -85,18 +97,6 @@
         "id": "caspiantpb",
         "label": "Caspian Porter TPB",
         "image": "caspian-tpb-300.png"
-        },
-        {
-        "title": "Tales From the Dispatch",
-        "id": "tales4",
-        "label": "TFTD Vol #4",
-        "image": "tftd-4-300.png"
-        },
-        {
-        "title": "Caspian Porter #4",
-        "id": "caspian4",
-        "label": "Caspian Porter #4",
-        "image": "caspian-4-300.png"
         }
     ]
 }
