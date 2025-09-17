@@ -3,7 +3,7 @@ Author: Drew D. Lenhart
 Author URI: https://snowyworks.com
 Project: snowyworks.github.io
 ProjectURL: https://github.com/snowyworks/snowyworks.github.io
-Date: June 2017 - updated 07-28-2023
+Date: June 2017 - updated 09-17-2025
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -901,14 +901,14 @@ Date: June 2017 - updated 07-28-2023
           <div class="panel-body">
             <h2>ABOUT</h2>
             <span style="font-size: 16px !important">
-              <strong>SnowyWorks</strong> was founded in 2018 by Drew D. Lenhart
+              <strong>SnowyWorks</strong> was founded in 2017 by Drew D. Lenhart
               and is based in New Haven, Indiana. The company began with its
               core publication, Future Sci-Fi Tales, a science fiction anthology
               series featuring stories from independent comic creators. Since
               then, the company has sky rocketed with new titles, including
               one-shots such as De-Aged and Calzer's Clock, Bitter Awakening, as
               well as new ongoing series Caspian Porter and The Monster's
-              Cleanup Guy.<br /><br />
+              Cleanup Guy. Check out our comprehensive <a href="timeline.html">timeline here.</a><br /><br />
             </span>
           </div>
         </div>
@@ -921,7 +921,7 @@ Date: June 2017 - updated 07-28-2023
       >
         <div class="row">
           <div class="col-md-8 bottom-footer" style="color: #999 !important">
-            Copyright 2018-2025 SnowyWorks LLC. Designed by
+            Copyright 2017-2025 SnowyWorks LLC. Designed by
             <a href="https://drewlenhart.com">Drew D. Lenhart</a> <br />
             <div id="digitalBox">
               <em
@@ -979,7 +979,6 @@ Date: June 2017 - updated 07-28-2023
     <script src="vendor/bootstrap.min.js"></script>
     <script src="js/snowyworks-app.js?v=40"></script>
     <script>
-      // Modal click & load comic dialog
       $(document).on("click", ".open-comicDialog", function () {
         let comicID = $(this).data("id");
         let title = $(this).data("title");
@@ -993,13 +992,11 @@ Date: June 2017 - updated 07-28-2023
           resultsDiv.html(data);
         })
           .done(function () {
-            //send success
           })
           .fail(function () {
             resultsDiv.html("<h2>Unable to find this issue!</h2>");
           })
           .always(function () {
-            //always perform for every request
           });
       });
 
