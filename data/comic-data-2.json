@@ -3,6 +3,18 @@
     "next": "data/comic-data-3.json",
     "results": [
 {
+    "title": "The Monster's Cleanup Guy Vol 1",
+    "id": "monstersv1",
+    "label": "TMCUG V1",
+    "image": "monsters-v1-300.png"
+},
+{
+    "title": "Caspian Porter TPB",
+    "id": "caspiantpb",
+    "label": "Caspian Porter TPB",
+    "image": "caspian-tpb-300.png"
+},
+{
     "title": "Tales From the Dispatch",
     "id": "tales4",
     "label": "TFTD Vol #4",
@@ -85,18 +97,6 @@
     "id": "stones",
     "label": "Stones",
     "image": "stones-cover-sm.jpg"
-},
-{
-    "title": "The Monster's Cleanup Guy",
-    "id": "monsters",
-    "label": "TMCUG (Short)",
-    "image": "mcug-digital-small.jpg"
-},
-{
-    "title": "Future Sci-Fi Tales 2020",
-    "id": "fscifi2020",
-    "label": "Future Sci-Fi Tales 2020",
-    "image": "fscifi2020Small.png"
 }
 ]
 }
