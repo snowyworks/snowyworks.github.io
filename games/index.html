@@ -12,19 +12,92 @@
         SnowyWorks - Games
     </title>
     <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/vendor/htmx.min.js"></script>
+    <script src="/vendor/client-side-templates.js"></script>
+    <script src="/vendor/nunjucks.min.js"></script>
     <link href="/css/snowtemplate.css?v=22" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron jumbotron-override bg-img">
-            <div class="container">
-                <div class="row">
-                    <h3 class="">GAMES - COMING SOON</h3>
-                    <hr />
+        <div id="navbar"></div>
+        <nav class="navbar navbar-default borderBottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">
+                        <img src="images/swIcon3.png" alt="SnowyWorks" class="" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="/">COMICS</a></li>
+                        <li class=""><a href="/games">GAMES</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.instagram.com/drew.d.lenhart/" class="icons" target="_blank"><i
+                                    class="fab fa-instagram faz"></i></a>
+                        </li>
+                        <!-- <li>
+                <a
+                  href="https://twitter.com/LenhartDrew"
+                  class="icons"
+                  target="_blank"
+                  ><i class="fab fa-twitter faz"></i
+                ></a>
+              </li> -->
+                        <li>
+                            <a href="https://www.facebook.com/drew.lenhart.35/" class="icons" target="_blank"><i
+                                    class="fab fa-facebook faz"></i></a>
+                        </li>
+                        <li>
+                            <a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--Middle Game Section -->
+        <div id="submissions" class="jumbotron jum-back" style="background-image: url(images/testback2.png)">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <div class="col-md-12" style="">
+                        <h2>GAMES COMING SOON...</h2>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="jumbotron jum-back borderTop" style="background-image: url(images/testback2.png)">
+            <div class="row">
+                <div class="col-md-8 bottom-footer" style="color: #999 !important">
+                    Copyright 2017-2025 SnowyWorks. Designed by
+                    <a href="https://drewlenhart.com">Drew D. Lenhart</a> <br />
+                    <div id="digitalBox">
+                        <em>Website best viewed in a modern browser. You can view the
+                            source code at
+                            <a href="https://github.com/snowyworks/snowyworks.github.io"
+                                target="_blank">GitHub</a>.</em>
+                    </div>
+                </div>
+                <div class="col-md-4" style="color: #999 !important">
+                    <center>
+                        <img src="images/new_modern_snowyworks.png" alt="" class="centerMe" width="200" height="40" />
+                    </center>
+                </div>
             </div>
+        </div>
     </div>
 </body>
+
 </html>
