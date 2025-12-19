@@ -3,7 +3,7 @@ Author: Drew D. Lenhart
 Author URI: https://snowyworks.com
 Project: snowyworks.github.io
 ProjectURL: https://github.com/snowyworks/snowyworks.github.io
-Date: June 2017 - updated 12-07-2025
+Date: June 2017 - updated 12-19-2025
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +20,6 @@ Date: June 2017 - updated 12-07-2025
     more!
   </title>
   <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="/vendor/htmx.min.js"></script>
-  <script src="/vendor/client-side-templates.js"></script>
-  <script src="/vendor/nunjucks.min.js"></script>
   <link href="/css/snowtemplate.css?v=22" rel="stylesheet" type="text/css" />
   <link type="text/css" rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
 </head>
@@ -84,14 +81,6 @@ Date: June 2017 - updated 12-07-2025
               <a href="https://www.instagram.com/drew.d.lenhart/" class="icons" target="_blank"><i
                   class="fab fa-instagram faz"></i></a>
             </li>
-            <!-- <li>
-                <a
-                  href="https://twitter.com/LenhartDrew"
-                  class="icons"
-                  target="_blank"
-                  ><i class="fab fa-twitter faz"></i
-                ></a>
-              </li> -->
             <li>
               <a href="https://www.facebook.com/drew.lenhart.35/" class="icons" target="_blank"><i
                   class="fab fa-facebook faz"></i></a>
@@ -334,38 +323,12 @@ Date: June 2017 - updated 12-07-2025
                       <br />
                     </div>
                   </div>
-                  <div hx-ext="client-side-templates">
-                    <div hx-get="data/comic-data.json" hx-swap="afterend" hx-trigger="revealed"
-                      nunjucks-template="blogs-template">
-                      <template id="blogs-template">
-                        {% for comic in results %}
-                        <div class="col-md-3 text-center">
-                          <img src="images/{{ comic.image }}" alt="" class="compImg shadowImg" /><br />
-                          <button class="btn btn-primary btn-spacing open-comicDialog" data-title="{{ comic.title }}"
-                            data-id="{{ comic.id }}" data-toggle="modal" data-target="#fsModal">
-                            {{ comic.label }}
-                          </button>
-                        </div>
-                        {% endfor %}
-
-                        <!-- load more -->
-                        <center>
-                          {% if next %}
-                          <button class="btn btn-primary btn-lg" hx-get="{{ next }}" hx-swap="outerHTML"
-                            hx-trigger="click" nunjucks-template="blogs-template">
-                            Load More...
-                          </button>
-                          {% endif %}
-                        </center>
-                      </template>
-                    </div>
-                  </div>
-                  <!-- original implementation
 									 <div class="row" id="comic-results">
 										<center>
 											<div id="loader" class="loader"></div>
 										</center>
-									</div> -->
+									</div>
+                  <center><a href="/comics" class="btn btn-primary btn-spacing">SEE OUR FULL CATELOGUE</a></center>
                 </div>
                 <!--end panel body-->
               </div>
@@ -590,7 +553,7 @@ Date: June 2017 - updated 12-07-2025
 
   <script src="vendor/jquery-2.1.1.min.js"></script>
   <script src="vendor/bootstrap.min.js"></script>
-  <script src="js/snowyworks-app.js?v=40"></script>
+  <script src="js/snowyworks-app.js?v=42"></script>
   <script>
     $(document).on("click", ".open-comicDialog", function () {
       let comicID = $(this).data("id");
@@ -614,7 +577,7 @@ Date: June 2017 - updated 12-07-2025
     });
 
     $(document).ready(function () {
-      loadComicCatalog("comic-results", false, "loader");
+      loadComicCatalog("comic-results", false, "loader", "home");
     });
   </script>
 </body>

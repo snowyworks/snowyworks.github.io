@@ -9,7 +9,7 @@
     <meta name="author" content="Drew D. Lenhart" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>
-        SnowyWorks - Games
+        SnowyWorks - Full Comics Catalogue
     </title>
     <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../css/snowtemplate.css?v=22" rel="stylesheet" type="text/css" />
@@ -58,13 +58,24 @@
             <!-- /.container-fluid -->
         </nav>
         
-        <!--Middle Game Section -->
-        <div id="submissions" class="jumbotron jum-back" style="background-image: url(../images/testback2.png)">
+        <!--Middle comic Section -->
+        <div id="comics" class="jumbotron jum-back" style="background-image: url(../images/testback2.png)">
             <div class="panel panel-primary">
-                <div class="panel-body">
-                    <div class="col-md-12" style="">
-                        <h2>GAMES COMING SOON...</h2>
+                <div style="margin: 0 auto !important">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12" style="">
+                                <h2>COMICS/GRAPHIC NOVELS CATALOG</h2>
+                                <br />
+                            </div>
+                        </div>
+                        <div class="row" id="comic-results">
+                            <center>
+                                <div id="loader" class="loader"></div>
+                            </center>
+                        </div>
                     </div>
+                    <!--end panel body-->
                 </div>
             </div>
         </div>
@@ -89,6 +100,55 @@
             </div>
         </div>
     </div>
+
+    <!-- modal -->
+    <div id="fsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 id="modal-title-bar" class="modal-title">Loading....</h1>
+                </div>
+                <div class="modal-body" id="modal-body-content">
+                    <div id="modal-results"></div>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-primary">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../vendor/jquery-2.1.1.min.js"></script>
+    <script src="../vendor/bootstrap.min.js"></script>
+    <script src="../js/snowyworks-app.js?v=44"></script>
+    <script>
+        $(document).on("click", ".open-comicDialog", function () {
+            let comicID = $(this).data("id");
+            let title = $(this).data("title");
+            let resultsDiv = $("#modal-results");
+
+            resultsDiv.html("");
+
+            $(".modal-header #modal-title-bar").html(title);
+
+            $.get("comics/" + comicID + "-comic.html", function (data) {
+                resultsDiv.html(data);
+            })
+                .done(function () {
+                })
+                .fail(function () {
+                    resultsDiv.html("<h2>Unable to find this issue!</h2>");
+                })
+                .always(function () {
+                });
+        });
+
+        $(document).ready(function () {
+            loadComicCatalog("comic-results", false, "loader", "full");
+        });
+    </script>
 </body>
 
 </html>

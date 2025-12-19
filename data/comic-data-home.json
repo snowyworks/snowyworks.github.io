@@ -1,0 +1,50 @@
+[
+        {
+            "title": "Fire, Fury & Stones",
+            "id": "ffastones",
+            "label": "Fire, Fury & Stones",
+            "image": "ffastones-300.png"
+        },
+        {
+            "title": "Tales from the Works",
+            "id": "tftw",
+            "label": "Tales from the Works",
+            "image": "tftw-300.png"
+        },
+        {
+            "title": "De-Aged (Special Edition)",
+            "id": "deagedse",
+            "label": "De-Aged (SE)",
+            "image": "deaged-se-300.jpg"
+        },
+        {
+            "title": "Midnyght Tryfecta",
+            "id": "midnight",
+            "label": "Midnyght Tryfecta",
+            "image": "midnight-300.jpg"
+        },
+        {
+            "title": "The Monster's Cleanup Guy Vol 1",
+            "id": "monstersv1",
+            "label": "TMCUG V1",
+            "image": "monsters-v1-300.png"
+        },
+        {
+            "title": "Weston's Revenge",
+            "id": "weston",
+            "label": "Weston's Revenge",
+            "image": "weston-300.png"
+        },
+        {
+            "title": "Alcott Ainsworth #1",
+            "id": "alcott",
+            "label": "Alcott Ainsworth",
+            "image": "alcott-300.jpg"
+        },
+        {
+            "title": "Gritt Grimstone",
+            "id": "grimstone-2",
+            "label": "Gritt Grimstone",
+            "image": "grimstone-new-300.png"
+        }
+    ]
