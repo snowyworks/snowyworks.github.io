@@ -13,7 +13,7 @@ body {
   transition: opacity 0.3s;
 }
 
-body.loaded {
+body.header-loaded, body.footer-loaded {
   opacity: 1;
 }
 

@@ -443,26 +443,8 @@ Date: June 2017 - updated 12-19-2025
     </div>
     <!-- end jumbotron -->
 
-    <div class="jumbotron jum-back borderTop" style="background-image: url(images/testback2.png)">
-      <div class="row">
-        <div class="col-md-8 bottom-footer" style="color: #999 !important">
-          Copyright 2017-2025 SnowyWorks. Designed by
-          <a href="https://drewlenhart.com">Drew D. Lenhart</a> <br />
-          <div id="digitalBox">
-            <em>Website best viewed in a modern browser. You can view the
-              source code at
-              <a href="https://github.com/snowyworks/snowyworks.github.io" target="_blank">GitHub</a>.</em>
-          </div>
-        </div>
-        <div class="col-md-4" style="color: #999 !important">
-          <center>
-            <img src="images/new_modern_snowyworks.png" alt="" class="centerMe" width="200" height="40" />
-          </center>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end container-->
+    <div id="footer-container"></div>
+  </div>  <!-- end container-->
 
   <!-- modal -->
   <div id="fsModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -488,7 +470,11 @@ Date: June 2017 - updated 12-19-2025
   <script>
     $(document).ready(function () {
       $('#navbar-container').load('nav.html', function () {
-        $('body').addClass('loaded');
+        $('body').addClass('header-loaded');
+      });
+
+      $('#footer-container').load('footer.html', function () {
+        $('body').addClass('footer-loaded');
       });
     });
 
