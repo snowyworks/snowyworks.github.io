@@ -12,52 +12,13 @@
         SnowyWorks - Full Comics Catalogue
     </title>
     <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/snowtemplate.css?v=22" rel="stylesheet" type="text/css" />
+    <link href="../css/snowtemplate.css?v=23" rel="stylesheet" type="text/css" />
     <link type="text/css" rel="stylesheet" href="../vendor/fontawesome/css/all.min.css" />
 </head>
 
 <body>
     <div class="container">
-        <div id="navbar"></div>
-        <nav class="navbar navbar-default borderBottom">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="/" class="navbar-brand">
-                        <img src="../images/swIcon3.png" alt="SnowyWorks" class="" />
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class=""><a href="/comics">COMICS</a></li>
-                        <li class=""><a href="/games">GAMES</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="https://www.instagram.com/drew.d.lenhart/" class="icons" target="_blank"><i
-                                    class="fab fa-instagram faz"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/drew.lenhart.35/" class="icons" target="_blank"><i
-                                    class="fab fa-facebook faz"></i></a>
-                        </li>
-                        <li>
-                            <a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                                CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-
+        <div id="navbar-container"></div>
         <!--Middle comic Section -->
         <div id="comics" class="jumbotron jum-back" style="background-image: url(../images/testback2.png)">
             <div class="panel panel-primary">
@@ -121,7 +82,7 @@
 
     <script src="../vendor/jquery-2.1.1.min.js"></script>
     <script src="../vendor/bootstrap.min.js"></script>
-    <script src="../js/snowyworks-app.js?v=46"></script>
+    <script src="../js/snowyworks-app.js?v=1"></script>
     <script>
         $(document).ready(function () {
             $('#navbar-container').load('../nav.html', function () {
