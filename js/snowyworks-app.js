@@ -10,11 +10,14 @@ function loadComicCatalog(resultsDiv = "results", debug = false, loader, type){
   let stagingArea = $("#" + resultsDiv);
   let turnOffLoader = $("#" + loader);
   let displayCatelogueFile = "";
+  let displayImagePath = "";
 
   if(type == "full") {
     displayCatelogueFile = "../data/comic-data-full.json";
+    displayImagePath = "../images/";
   } else {
     displayCatelogueFile = "data/comic-data-home.json";
+    displayImagePath = "images/";
   }
 
   var ts = new Date().getTime();
@@ -31,7 +34,7 @@ function loadComicCatalog(resultsDiv = "results", debug = false, loader, type){
 
       content += "<div class=\"col-md-3 text-center\">";
       content += "<a href=\"\" class=\"open-comicDialog\" data-title=\"" + value.title + "\" data-id=\"" + value.id + "\" data-toggle=\"modal\" data-target=\"#fsModal\">";
-      content += "<img src=\"images/" + value.image + "\" alt=\"\" class=\"compImg shadowImg\" />";
+      content += "<img src=\"" + displayImagePath + value.image + "\" alt=\"\" class=\"compImg shadowImg\" />";
       content += "</a><br />";
       content += "<button class=\"btn btn-primary btn-spacing open-comicDialog\" data-title=\"" + value.title + "\" data-id=\"" + value.id + "\" data-toggle=\"modal\" data-target=\"#fsModal\">" + value.label + "</button>";
       content += "</div>";
