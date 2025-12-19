@@ -82,7 +82,7 @@
 
     <script src="../vendor/jquery-2.1.1.min.js"></script>
     <script src="../vendor/bootstrap.min.js"></script>
-    <script src="../js/snowyworks-app.js?v=1"></script>
+    <script src="../js/snowyworks-app.js?v=2"></script>
     <script>
         $(document).ready(function () {
             $('#navbar-container').load('../nav.html', function () {
@@ -99,7 +99,7 @@
 
             $(".modal-header #modal-title-bar").html(title);
 
-            $.get(comicID + "-comic.html", function (data) {
+            $.get("/comics/" + comicID + "-comic.html", function (data) {
                 resultsDiv.html(data);
             })
                 .done(function () {
