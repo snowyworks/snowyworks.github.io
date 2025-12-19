@@ -132,7 +132,7 @@
 
             $(".modal-header #modal-title-bar").html(title);
 
-            $.get("comics/" + comicID + "-comic.html", function (data) {
+            $.get(comicID + "-comic.html", function (data) {
                 resultsDiv.html(data);
             })
                 .done(function () {
