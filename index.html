@@ -20,82 +20,13 @@ Date: June 2017 - updated 12-19-2025
     more!
   </title>
   <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/css/snowtemplate.css?v=22" rel="stylesheet" type="text/css" />
+  <link href="/css/snowtemplate.css?v=23" rel="stylesheet" type="text/css" />
   <link type="text/css" rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
 </head>
 
 <body>
   <div class="container">
-    <div id="navbar"></div>
-    <nav class="navbar navbar-default borderBottom">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="/" class="navbar-brand">
-            <img src="images/swIcon3.png" alt="SnowyWorks" class="" />
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class=""><a href="#comics">COMICS</a></li>
-            <li class=""><a href="/games">GAMES</a></li>
-            <li class=""><a href="#news">NEWS</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">BUY DIGITAL<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://www.amazon.com/s?k=snowyworks&i=digital-text&ref=nb_sb_noss">Amazon</a>
-                </li>
-                <li>
-                  <a href="https://www.comichaus.com/publishers/snowyworks/903.htm">Comichaus</a>
-                </li>
-                <li>
-                  <a href="https://www.drivethrucomics.com/browse/pub/15755/SnowyWorks">Drive Thru Comics</a>
-                </li>
-                <li>
-                  <a href="https://play.google.com/store/books/author?id=Drew+D.+Lenhart">Google Play</a>
-                </li>
-                <li>
-                  <a href="https://www.kobo.com/us/en/search?query=Drew+D.+Lenhart">Kobo</a>
-                </li>
-                <li>
-                  <a href="https://globalcomix.com/a/snowyworks">GlobalComix</a>
-                </li>
-                <li><a href="https://gumroad.com/snowyworks">Gumroad</a></li>
-                <li>
-                  <a href="https://www.spinwhizcomics.com/site/landingpage/browse/#f_Publisher=SnowyWorks">Spinwhiz
-                    Comics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="https://www.instagram.com/drew.d.lenhart/" class="icons" target="_blank"><i
-                  class="fab fa-instagram faz"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/drew.lenhart.35/" class="icons" target="_blank"><i
-                  class="fab fa-facebook faz"></i></a>
-            </li>
-            <li>
-              <a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                CONTACT</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-
+    <div id="navbar-container"></div>
     <div class="bg-color" style="background-image: url(images/testback2.png)">
       <div class="row">
         <div class="col-md-12" style="">
@@ -323,11 +254,11 @@ Date: June 2017 - updated 12-19-2025
                       <br />
                     </div>
                   </div>
-									 <div class="row" id="comic-results">
-										<center>
-											<div id="loader" class="loader"></div>
-										</center>
-									</div>
+                  <div class="row" id="comic-results">
+                    <center>
+                      <div id="loader" class="loader"></div>
+                    </center>
+                  </div>
                   <center><a href="/comics" class="btn btn-primary btn-spacing">SEE OUR FULL CATELOGUE</a></center>
                 </div>
                 <!--end panel body-->
@@ -555,6 +486,12 @@ Date: June 2017 - updated 12-19-2025
   <script src="vendor/bootstrap.min.js"></script>
   <script src="js/snowyworks-app.js?v=42"></script>
   <script>
+    $(document).ready(function () {
+      $('#navbar-container').load('nav.html', function () {
+        $('body').addClass('loaded');
+      });
+    });
+
     $(document).on("click", ".open-comicDialog", function () {
       let comicID = $(this).data("id");
       let title = $(this).data("title");

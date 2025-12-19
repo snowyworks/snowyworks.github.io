@@ -123,6 +123,12 @@
     <script src="../vendor/bootstrap.min.js"></script>
     <script src="../js/snowyworks-app.js?v=46"></script>
     <script>
+        $(document).ready(function () {
+            $('#navbar-container').load('../nav.html', function () {
+                $('body').addClass('loaded');
+            });
+        });
+
         $(document).on("click", ".open-comicDialog", function () {
             let comicID = $(this).data("id");
             let title = $(this).data("title");
