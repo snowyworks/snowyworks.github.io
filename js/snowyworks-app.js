@@ -12,7 +12,7 @@ function loadComicCatalog(resultsDiv = "results", debug = false, loader, type){
   let displayCatelogueFile = "";
 
   if(type == "full") {
-    displayCatelogueFile = "data/comic-data-full.json";
+    displayCatelogueFile = "../data/comic-data-full.json";
   } else {
     displayCatelogueFile = "data/comic-data-home.json";
   }
