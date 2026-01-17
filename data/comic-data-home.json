@@ -1,4 +1,9 @@
-[
+[       {
+            "title": "SnowyWorks Omnibus",
+            "id": "omnibus",
+            "label": "Omnibus",
+            "image": "omnibus-300.jpg"
+        },
         {
             "title": "Fire, Fury & Stones",
             "id": "ffastones",
@@ -34,12 +39,6 @@
             "id": "weston",
             "label": "Weston's Revenge",
             "image": "weston-300.png"
-        },
-        {
-            "title": "Alcott Ainsworth #1",
-            "id": "alcott",
-            "label": "Alcott Ainsworth",
-            "image": "alcott-300.jpg"
         },
         {
             "title": "Gritt Grimstone",

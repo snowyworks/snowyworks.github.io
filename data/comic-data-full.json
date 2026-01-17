@@ -1,5 +1,11 @@
 [
     {
+        "title": "SnowyWorks Omnibus",
+        "id": "omnibus",
+        "label": "Omnibus",
+        "image": "omnibus-300.jpg"
+    },
+    {
         "title": "Fire, Fury & Stones",
         "id": "ffastones",
         "label": "Fire, Fury & Stones",
