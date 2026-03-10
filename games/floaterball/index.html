@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Floater Ball</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div style="display: block; width: auto; position: relative; padding-top: 10px;">
+        <div class="titleBox"><img src="assets/images/floater-ball-logo-light.png" /></div>
+
+        <div style="position: relative; width: 600px; margin: 0 auto;">
+            <canvas></canvas>
+
+            <div id="startOverlay" class="startOverlay">
+                <img src="assets/images/ball-landing-image.png" style="margin-bottom: 10px;" />
+                <div>
+                    <a href="#" class="playButton-fullWidth" onclick="hideStartAndPlay(); return false;">Play</a>
+                    <a href="#" class="playButton-fullWidth" onclick="showInstructions(); return false;">How to play</a>
+                    <a href="#" class="playButton-fullWidth" onclick="showCredits(); return false;">Credits</a>
+                    <br /><br /><br />
+                    <div class="footer" style="margin-top: 20px;">© 2016-2026 SnowyWorks<br />
+                        <a href="https://snowyworks.com/games" target="_blank"><img
+                                src="assets/images/snowyworks_lng_logo.png" width="85" height="22"
+                                style="padding-top: 4px;" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="instructionOverlay" class="instructionOverlay" style="display: none;">
+                <p style="margin-bottom: 5px; line-height: 0.9; text-align: justify;">
+                    Floater Ball: Collect as many squares as possible within the time
+                    limit. Use the walls and other objects to your advantage and get
+                    the highest score possible. P.S. don't eat the red squares!
+                </p>
+
+                <div style="margin-bottom: 20px;">
+                    <strong>Movement</strong><br />
+                    <img src="assets/images/arrow-keys.png" height="24" width="80" />
+                    <br />
+                    <strong>Stop</strong>
+                    <br />
+                    <img src="assets/images/shift-keys.png" width="122" height="24" />
+                </div>
+
+                <a href="#" class="playButton" onclick="backToStart(); return false;">Back</a>
+                <a href="instructions.html" class="playButton">Instructions</a>
+            </div>
+
+            <div id="creditsOverlay" class="instructionOverlay" style="display: none;">
+                <h2 style="color: #ffff00; text-shadow: 0 0 10px #ffff00; margin-bottom: 15px;">Credits</h2>
+                <p style="margin-bottom: 20px; font-size: 1.0rem; color: #00ffff;">
+                    Created, designed and developed by <br /><a href="https://www.snowyworks.com/games"
+                        class="credits-link">Drew D. Lenhart</a><br /><br />
+                    SoundFX by <a href="https://zwubs.com/" class="credits-link">Zach Winters</a>
+                </p>
+                <a href="#" class="playButton" onclick="exitCredits(); return false;">OK</a>
+            </div>
+
+            <div id="levelTransitionOverlay" class="instructionOverlay" style="display: none;">
+                <h2 style="color: #ffff00; text-shadow: 0 0 10px #ffff00; margin-bottom: 20px;">Level Complete!</h2>
+                <p style="margin-bottom: 30px; font-size: 1.1rem;">
+                    Great job! Get ready for the next level!
+                </p>
+                <p style="color: #ff00ff; font-size: 0.9rem;">
+                    Press <span
+                        style="display: inline-block; background: #1a1a1a; border: 2px solid #00ffff; padding: 5px 12px; margin: 3px; border-radius: 4px; font-weight: 700; color: #00ffff;">SPACEBAR</span>
+                    to continue
+                </p>
+            </div>
+
+            <div id="gameOverOverlay" class="instructionOverlay" style="display: none;">
+                <h2 id="gameOverTitle" style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff; margin-bottom: 20px;">Game
+                    Over!</h2>
+                <p id="gameOverMessage" style="margin-bottom: 20px; font-size: 1.1rem; color: #00ffff;">
+                    Your score was: <span id="finalScore" style="color: #ffff00; font-weight: bold;">0</span>
+                </p>
+                <a href="#" class="playButton" onclick="resetGame(); return false;">Play Again</a>
+            </div>
+
+            <div id="exitConfirmOverlay" class="instructionOverlay" style="display: none;">
+                <h2 style="color: #e1e136; text-shadow: 0 0 10px #ffff00; margin-bottom: 20px;">Exit Game?</h2>
+                <p style="margin-bottom: 30px; font-size: 1.1rem; color: #00ffff;">
+                    Would you like to exit the game?<br />
+                    Your progress will be lost.
+                </p>
+                <a href="#" class="playButton" onclick="confirmExit(); return false;" style="margin: 0 10px;">Yes</a>
+                <a href="#" class="playButton" onclick="cancelExit(); return false;" style="margin: 0 10px;">No</a>
+            </div>
+        </div>
+    </div>
+    <div id="counter"></div>
+    <script src="js/floaterball.js"></script>
+    <script>
+        function hideStartAndPlay() {
+            document.getElementById('startOverlay').style.display = 'none';
+            startGame();
+        }
+
+        function showInstructions() {
+            document.getElementById('startOverlay').style.display = 'none';
+            document.getElementById('instructionOverlay').style.display = 'block';
+        }
+
+        function backToStart() {
+            document.getElementById('instructionOverlay').style.display = 'none';
+            document.getElementById('startOverlay').style.display = 'block';
+        }
+
+        function hideInstructionsAndStart() {
+            document.getElementById('instructionOverlay').style.display = 'none';
+            startGame();
+        }
+
+        function showCredits() {
+            document.getElementById('startOverlay').style.display = 'none';
+            document.getElementById('creditsOverlay').style.display = 'block';
+        }
+
+        function exitCredits() {
+            document.getElementById('creditsOverlay').style.display = 'none';
+            document.getElementById('startOverlay').style.display = 'block';
+        }
+
+        function confirmExit() {
+            document.getElementById('exitConfirmOverlay').style.display = 'none';
+            exitToMainMenu();
+        }
+
+        function cancelExit() {
+            document.getElementById('exitConfirmOverlay').style.display = 'none';
+            resumeFromExit();
+        }
+    </script>
+</body>
+
+</html>

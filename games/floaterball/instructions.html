@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floater Ball - Game Instructions</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/images/floater-ball-logo-light.png" alt="FLOATER BALL" />
+            <div class="subtitle">HOW TO PLAY</div><br />
+            <a href="index.html" class="playButton">Play Game</a>
+        </header>
+
+        <div class="section">
+            <h2>Objective</h2>
+            <p>Collect as many squares as possible within the time limit. Use the walls and other objects to your
+                advantage and get the highest score possible.
+                P.S. don't eat the red squares!</p>
+        </div>
+
+        <div class="section">
+            <h2>Controls</h2>
+            <p>
+                <span class="control-key">↑</span>
+                <span class="control-key">↓</span>
+                <span class="control-key">←</span>
+                <span class="control-key">→</span>
+                Move the ball
+            </p>
+            <p>
+                <span class="control-key">Shift</span>
+                Brake/Stop all movement
+            </p>
+            <p>
+                <span class="control-key">Space</span>
+                Continue to next level (after completing a level)
+            </p>
+            <p>
+                <span class="control-key">P</span>
+                Pause/Resume the game
+            </p>
+            <p>
+                <span class="control-key">Esc</span>
+                Exit the game
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>How to Play</h2>
+            <p>You control a white ball that moves with momentum, as if you are floating in space. The ball will
+                continue
+                sliding in the direction you push it, gradually slowing down over time.</p>
+
+            <h3>Food Items to Collect</h3>
+
+            <p><span class="food-item gray-square">Gray Squares (1 point)</span></p>
+            <ul>
+                <li>Always present on the playing field</li>
+                <li>Respawns immediately when collected</li>
+            </ul>
+
+            <p><span class="food-item green-square">Green Squares (5 points)</span></p>
+            <ul>
+                <li>Special food items that spawn randomly (Level 2+)</li>
+                <li>1-3 green squares may appear per level</li>
+            </ul>
+
+            <p><span class="food-item purple-square">Purple Squares (10 points)</span></p>
+            <ul>
+                <li>Bonus food that appears 5 seconds into each level (Level 2+)</li>
+                <li>Limited availability</li>
+            </ul>
+
+            <p><span class="food-item orange-square">Orange Squares (Power-up)</span></p>
+            <ul>
+                <li>Temporarily doubles your ball size</li>
+                <li>Makes it easier to collect food</li>
+            </ul>
+
+            <h3>Dangers to Avoid</h3>
+
+            <p><span class="food-item red-square">Red Squares (Game Over!)</span></p>
+            <ul>
+                <li>Forbidden food appears on even-numbered levels (2, 4, 6, etc.)</li>
+                <li>Spawns 5 seconds into the level</li>
+                <li><strong>Eating the forbidden fruit ends the game immediately!</strong></li>
+            </ul>
+
+            <p><span class="food-item" style="background: #FFD700; border-color: #FFA500; color: #0a0a0a;">Sticky Mines
+                    &#9651; (Stuck 5 seconds!)</span></p>
+            <ul>
+                <li>Gold triangle-shaped, appear on even-numbered levels after Level 5</li>
+                <li>Rolling over a sticky mine freezes your ball in place for 5 seconds!</li>
+                <li>Levels 6-10: up to 2 mines, Levels 12-16: up to 3, and more as you progress</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Level Progression</h2>
+            <ul>
+                <li><strong>50 Total Levels</strong> to complete</li>
+                <li><strong>Time decreases</strong> as you advance (starts at 20 seconds)</li>
+                <li><strong>Must collect at least 1 food to advance, or game ends</li>
+                <li><strong>More obstacles</strong> added each level for increased difficulty</li>
+                <li><strong>Sticky mines</strong> appear on even levels after Level 5</li>
+                <li>Every 3 levels, time limit reduces by 1 second</li>
+                <li>The last few levels are capped at 8 seconds of play time</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tips</h2>
+            <div class="tip-box">
+                <p><strong>1. Use the walls</strong> - Bounce off obstacles to your advantage.</p>
+            </div>
+            <div class="tip-box">
+                <p><strong>2. Brake strategically</strong> - Use SHIFT to stop when you need precision.</p>
+            </div>
+            <div class="tip-box">
+                <p><strong>3. Prioritize high-value food</strong> - Purple (10 pts) and Green (5 pts) are worth the
+                    risk!
+                </p>
+            </div>
+            <div class="tip-box">
+                <p><strong>4. Avoid red squares</strong> - One mistake ends your game!</p>
+            </div>
+            <div class="tip-box">
+                <p><strong>5. Watch the timer</strong> - Levels get harder, miss any food in a level and the game ends.
+                </p>
+            </div>
+            <div class="tip-box">
+                <p><strong>6. Steer clear of sticky mines</strong> - Losing 5 seconds while stuck can cost you the
+                    level!</p>
+            </div>
+            <div class="tip-box">
+                <p><strong>7. It may be brutal</strong> - If you make it to the last 10 levels, it will be punishing.</p>
+            </div>
+        </div>
+
+        <footer>
+            © 2016-2026 SnowyWorks<br />
+            <a href="https://snowyworks.com/games" target="_blank"><img src="assets/images/snowyworks_lng_logo.png"
+                    width="85" height="22" style="padding-top: 4px;" /></a>
+        </footer>
+    </div>
+</body>
+
+</html>
